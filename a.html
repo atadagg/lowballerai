@@ -1,0 +1,1849 @@
+<div class="classified-detail-wrapper ">
+
+    <div id="classifiedDetail">
+
+        <div class="classifiedDetail">
+            <!-- <div class="classifiedFavoriteBox disabled">
+<ul>
+    <li class="yourFavorite">
+        Bu ilan favorilerimde</li>
+    <li class="visitFavorites">
+        <a href="https://banaozel.sahibinden.com/favori-ilanlar">
+            Favorilerime Git</a>
+    </li>
+    <li class="removeFavorite">
+        <a id="removeFavorite">
+            Favorilerimden Çıkar</a>
+    </li>
+</ul>
+</div>
+-->
+
+            <div class="classifiedDetailTitle">
+<h1>made in japan les paul - processor ile takas dusunulur</h1>
+<ul class="classifiedEvents ">
+    <li class="add-to-favorites last">
+<a href="#" rel="nofollow" class="classifiedAddFavorite">
+    Favorilerime Ekle</a>
+<a href="#" rel="nofollow" class="classifiedRemoveFavorite disable">
+    Favorilerimden Çıkar</a>
+
+<!-- favorites list sub menu -->
+<div class="save-favorite-submenu classified-detail-favorite">
+    <div class="section-top">
+        <p class="title">Favori listeme kaydet</p>
+        <a href="javascript:" class="close-submenu"></a>
+    </div>
+
+    <div class="section-list folder-list">
+        <ul></ul>
+    </div>
+
+    <div class="section-new-list">
+        <a href="javascript:" class="create-new-list">Yeni liste oluştur</a>
+        <div class="new-list-container">
+            <div class="input-container">
+                <label for="txtFavoriteNewList" class="input-text-label-sui">Yeni liste</label>
+                <input type="text" maxlength="25" class="input-text-sui" id="txtFavoriteNewList">
+
+                <div class="error-container"></div>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn-sui">Kaydet</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-final">
+        <div class="favorite-success">
+            <h2>İlan <strong></strong> Favori Listenize Eklendi</h2>
+        </div>
+        <div class="favorite-history">
+            <h2>Bu ilana ait bundan sonraki fiyat <br>değişimlerini görüntüleyebilirsiniz.<br><a class="question">Nasıl görüntülerim?</a></h2>
+        </div>
+            <div class="custimize-price-notification">
+                <button type="button" class="btn btn-new btn-block btn-form" id="btnOpenPriceNotificationPopup" data-trigger-point="AUCTION_DETAIL">Fiyat bildirimlerini güncelle</button>
+                <dialog is-sui="true" data-extra-class="price-notification-dialog" visible="showPriceNotificationDialog" on-close="$root.modalShown = false; hideNPPopup();">
+<div class="disable">
+<div id="priceNotificationPopup">
+    <div class="popup-title"><h3>Fiyat bildirimleri</h3></div>
+
+    <div class="popup-content">
+        <div class="form-notification-type">
+            <div class="notification-type-title-wrap">
+                <div class="price-notifications">Bildirim türü</div>
+            </div>
+            <ul class="notification-radio-group-wrap">
+                <li class="notification-options-parent">
+                    <div class="radio-sui">
+                        <input class="sui-radio" type="radio" id="PRICE_DECREASE" ng-model="np.notificationType" value="PRICE_DECREASE" name="notificationType">
+                        <label for="PRICE_DECREASE">Fiyat her düştüğünde bildir</label>
+                    </div>
+                </li>
+                <li class="notification-options-parent">
+                    <div class="radio-sui">
+                        <input class="sui-radio" type="radio" id="PRICE_DECREASE_LIMIT" ng-model="np.notificationType" value="PRICE_DECREASE_LIMIT" name="notificationType">
+                        <label for="PRICE_DECREASE_LIMIT">Belirlediğim fiyatın altına düşünce bildir</label>
+                    </div>
+
+                    <div class="target-price-wrapper disable" ng-show="np.notificationType === 'PRICE_DECREASE_LIMIT'">
+                        <div class="price-decrease-limit-container">
+                            <div class="target-price-container">
+                                <div class="input-container">
+                                    <label for="CURRENT_PRICE" class="input-text-label-sui">Mevcut fiyat (TL)</label>
+                                    <input type="text" class="input-text-sui" maxlength="14" id="CURRENT_PRICE" ng-model="np.currentPrice" disabled="">
+                                </div>
+                            </div>
+                            <div class="target-price-container">
+                                <div class="input-container">
+                                    <label for="ALERT_PRICE" class="input-text-label-sui">Belirlediğim fiyat (TL)</label>
+                                    <input type="text" class="input-text-sui" maxlength="14" ng-change="formatCurrency(np.alertPrice)" id="ALERT_PRICE" ng-model="np.alertPrice" placeholder="Belirlediğiniz fiyatı yazın">
+
+                                    <div class="error-container" ng-show="np.alertPriceError||np.alertPriceMaxError">
+                                        <label class="error error-text" ng-show="np.alertPriceError">Belirlediğiniz fiyatı girin.</label>
+                                        <label class="error error-text-price" ng-show="np.alertPriceMaxError">İlan fiyatından daha düşük bir değer girmelisiniz.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="notification-options-parent-last">
+                    <div class="radio-sui">
+                        <input class="sui-radio" type="radio" id="NONE" ng-model="np.notificationType" value="NONE" name="notificationType">
+                        <label for="NONE">Fiyat bildirimlerini sessize al</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-notification-channel" ng-class="{'inactive': np.notificationType === 'NONE'}">
+            <div class="notification-channel-title-wrap">
+                <div class="price-notifications">Bildirim kanalı</div>
+            </div>
+            <ul class="horizontal channel-parent" ng-class="{'error':notificationChannelError}">
+                <li>
+                    <div class="form-check">
+                        <input type="checkbox" class="sui-switch" role="switch" id="MAIL_NOTIFICATION" ng-disabled="np.notificationType === 'NONE'" ng-model="np.notificationChannel.mail" ng-change="checkForTypeCheck()" value="MAIL_NOTIFICATION" checked="">
+                        <label for="MAIL_NOTIFICATION">E-posta bildirimi</label>
+                    </div>
+
+
+                </li>
+                <li>
+                    <div class="form-check">
+                        <input type="checkbox" class="sui-switch" role="switch" id="MOBILE_NOTIFICATION" ng-disabled="np.notificationType === 'NONE'" ng-model="np.notificationChannel.mobile" ng-change="checkForTypeCheck()" value="MOBILE_NOTIFICATION" checked="">
+                        <label for="MOBILE_NOTIFICATION">Mobil bildirim</label>
+                    </div>
+
+                </li>
+            </ul>
+            <div class="input-container">
+                <div class="error-container">
+                    <label class="error disable" ng-show="notificationChannelError">En az bir bildirim kanalı seçmelisiniz.</label>
+                </div>
+            </div>
+        </div>
+
+        <p class="bottom-note">Bildirim ayarlarını güncellemek için <b>Favoriler &gt; Favori İlanlar</b> menüsüne giderek listenizdeki ilgili ilanın sağ tarafındaki üç noktaya tıklayın, <b>"Fiyat bildirimlerini güncelle"</b>yi seçin.</p>
+    </div>
+
+    <div class="popup-buttons">
+        <button type="button" class="sui-button" sui-type="button" sui-style="ghost" sui-size="medium" id="closePriceNotification" ng-click="hideNPPopup()">Vazgeç</button>
+        <button type="button" class="sui-button" sui-type="button" sui-style="primary" sui-size="medium" id="savePriceNotification" ng-click="saveNotificationPreferences()">Kaydet</button>
+    </div>
+</div>
+</div>
+</dialog></div>
+            <div class="disable">
+<div id="favoriteAddedPopup">
+    <div class="popup-title">
+        <h3>İlan, favorilerinize eklendi</h3>
+    </div>
+
+    <div class="popup-content">
+        <p>“<span id="favoriteFolderName"></span>” listenize eklenen bu ilana ait fiyat değişimlerini takip edebilirsiniz.</p>
+        <p class="hide-if-no-price">Fiyat her düştüğünde veya belirleyeceğiniz fiyatın altına düştüğünde bildirim almayı tercih edebilirsiniz.</p>
+        </div>
+    <div class="popup-buttons hide-if-no-price">
+        <a class="btn-sui btn-sui-ghost" id="showFavoritePriceNotificationPopup" href="javascript:">Belirlediğim fiyatın altına düşünce bildir</a>
+        <a class="btn-sui hakan-boyle-istedi-button" id="showFavoriteAddedWithoutCustomizeSuccessPopup" href="javascript:">Her zaman bildir</a>
+    </div>
+    </div>
+</div>
+
+<div class="disable">
+<div id="favoriteAddedWithoutCustomizeSuccessPopup">
+    <div class="popup-title">
+        <h3>Fiyat bildirimleri</h3>
+    </div>
+    <div class="popup-content">
+        <div class="success-message">
+            <p id="txtFavoriteAdded-PRICE_DECREASE">Favoriye eklediğiniz ilandaki fiyat her düştüğünde sizi bilgilendireceğiz.</p>
+            <p id="txtFavoriteAdded-PRICE_DECREASE_LIMIT">Favoriye eklediğiniz ilandaki fiyat belirlediğiniz fiyatın altına düştüğünde sizi bilgilendireceğiz.</p>
+            <p id="txtFavoriteAdded-NONE">Favoriye eklediğiniz ilandaki fiyat bildirimleri sessize alındı.</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<input type="hidden" value="false" id="featureDiscoveryWebAddToFavorites">
+
+<!-- favorites limit modal -->
+<div class="disable">
+    <div id="saveFavoriteLimitModal">
+        <div class="popup-title">
+            <h3>İlan, favorilerinize kaydedilemedi</h3>
+        </div>
+
+        <div class="popup-content">
+            <p>Favori İlanlara toplamda 250 ilan kaydedilebilir, daha fazla ilan kaydedemezsiniz. <strong>Bana Özel &gt; Favori İlanlar</strong> sayfasından favori ilanlarınızı düzenleyebilirsiniz.</p>
+        </div>
+
+        <div class="popup-buttons">
+            <a class="btn-sui btn-sui-ghost close" href="javascript:;">Vazgeç</a>
+            <a class="btn-sui" href="https://banaozel.sahibinden.com/favori-ilanlar">Favori İlanlara Git</a>
+        </div>
+    </div>
+</div>
+</li>
+<li>
+        <a rel="nofollow" class="classifiedPrint" id="yazdir">
+            Yazdır</a>
+    </li>
+    <li class="share-icons">
+        <a id="shareOnFacebook" share-email-url="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.sahibinden.com%2filan%2fikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-made-in-japan-les-paul-processor-ile-takas-dusunulur-1224610216%2fdetay" rel="nofollow" class="pop-link tipitip-trigger share-icon facebook trackClick" data-content="Facebook ile paylaş" data-position="north" data-click-category="İlan Detay Events" data-click-event="İlan Paylaş" data-click-label="Facebook">
+            Facebook ile paylaş</a>
+        <a id="shareOnTwitter" share-email-url="https://twitter.com/intent/tweet?text=made+in+japan+les+paul+-+processor+ile+takas+dusunulur+sahibinden.com'da++-+1224610216+https%3a%2f%2fwww.sahibinden.com%2f1224610216+via+%40sahibindencom" rel="nofollow" class="pop-link tipitip-trigger share-icon twitter trackClick" data-content="X ile paylaş" data-position="north" data-click-category="İlan Detay Events" data-click-event="İlan Paylaş" data-click-label="Twitter">
+            X ile paylaş</a>
+        <a id="shareOnEmail" share-email-url="made%20in%20japan%20les%20paul%20-%20processor%20ile%20takas%20dusunulur&amp;body=https%3A%2F%2Fwww.sahibinden.com%2Filan%2Fikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-made-in-japan-les-paul-processor-ile-takas-dusunulur-1224610216%2Fdetay" rel="nofollow" class="tipitip-trigger share-icon email trackClick" data-content="E-posta ile gönder" data-position="north" data-click-category="İlan Detay Events" data-click-event="İlan Paylaş" data-click-label="E-mail">
+            E-posta ile gönder</a>
+    </li>
+</ul>
+<input type="hidden" value="1224610216" id="classifiedIdValue">
+<input type="hidden" value="AUCTION_DETAIL" id="favoriteSource">
+</div>
+<div class="classifiedDetailStickyHeader">
+
+<div class="add-favorite-overlay"> </div>
+<div class="classified-sticky-header">
+    <strong>made in japan les paul - processor ile takas dusunulur</strong>
+    <span class="classified-sticky-number">İlan No:&nbsp;1224610216</span>
+    <span class="sticky-price"> 42.000 TL</span>
+
+    <ul class="sticky-classified-events  sticky-only-favorite">
+        <li>
+                <a class="phone-info trackClick trackId_sticky_ara_normal tipitip-trigger" data-close-event="click" data-position="south" data-content="Numaraları Göster"></a>
+            </li>
+        </ul>
+</div>
+<div class="phone-numbers">
+
+    <div class="title">
+        <span>Satıcının Telefon Numaraları</span>
+        <a href="#" class="close-submenu"></a>
+    </div>
+
+    <div class="phone-content">
+        <ul>
+            <li>
+                            <span class="phone-label">Cep</span>
+                            <style>.css3abae36d-900d-47e5-8f56-703e65027c1e:before {content: '0 (530) 792 81 69';}</style>
+                                    <span class="css3abae36d-900d-47e5-8f56-703e65027c1e phone-value"></span>
+                                    </li>
+                    </ul>
+    </div>
+</div>
+</div>
+<div class="classifiedDetailContent">
+
+                <input id="videoProviderAbValue" type="hidden" value="true">
+<input id="videoProviderAllVariants" type="hidden" value="true">
+
+<div class="classifiedDetailPhotos">
+<div class="classifiedDetailMainPhoto">
+    <label class="loader"></label>
+    <input id="images_0" type="radio" name="slide" checked="checked" class="main-photo">
+        <label id="label_images_1" for="images_1" class="">
+            <img class="stdImg" src="https://i0.shbdn.com/photos/61/02/16/x5_122461021625e.jpg" alt="İkinci El ve Sıfır Alışveriş / Müzik / Müzik Aletleri / Telli Çalgılar / Gitar / Elektro" title="İkinci El ve Sıfır Alışveriş / Müzik / Müzik Aletleri / Telli Çalgılar / Gitar / Elektro" data-hj-suppress="">
+            </label>
+    <input id="images_1" type="radio" name="slide">
+        <label id="label_images_2" for="images_2" class="">
+            <img src="https://s0.shbdn.com/assets/images/blank:8a32c176bfeb4859a09ee252d278931e.png" data-src="https://i0.shbdn.com/photos/61/02/16/x5_1224610216y9y.jpg" alt="FujiGen Elektro Gitar" title="FujiGen Elektro Gitar" data-hj-suppress="">
+            </label>
+    <input id="images_2" type="radio" name="slide">
+        <label id="label_images_3" for="images_3" class="">
+            <img src="https://s0.shbdn.com/assets/images/blank:8a32c176bfeb4859a09ee252d278931e.png" data-src="https://i0.shbdn.com/photos/61/02/16/x5_1224610216n5l.jpg" alt="İkinci El ve Sıfır Alışveriş / Müzik / Müzik Aletleri / Telli Çalgılar / Gitar / Elektro" title="İkinci El ve Sıfır Alışveriş / Müzik / Müzik Aletleri / Telli Çalgılar / Gitar / Elektro" data-hj-suppress="">
+            </label>
+    <input id="images_3" type="radio" name="slide">
+        <label id="label_images_0" for="images_0" class="">
+            <img src="https://s0.shbdn.com/assets/images/blank:8a32c176bfeb4859a09ee252d278931e.png" data-src="https://i0.shbdn.com/photos/61/02/16/x5_12246102161ip.jpg" alt="FujiGen Elektro Gitar" title="FujiGen Elektro Gitar" data-hj-suppress="">
+            </label>
+    </div>
+
+<ul class="classifiedDetailMegaVideo">
+    <li>
+        <a id="mega-foto" class="megaPhotoLink megaPhoto">
+            Büyük Fotoğraf</a>
+    </li>
+    <li>
+            <a data-hash="" class="videoLink passive" data-click-category="İlan Detay Events" data-click-event="Click - Detay Alanı" data-click-label="Video">
+                Video</a>
+        </li>
+    </ul>
+
+<!-- thmbs -->
+<div class="classifiedDetailThumbListContainer">
+        <ul class="classifiedDetailThumbListPages clearfix page-one">
+            <li>
+                    <ul class="classifiedDetailThumbList one-column">
+                        <li>
+                                <label for="images_0" class=" selected" data-megaindex="0">
+                                    <img class="thmbImg" src="https://i0.shbdn.com/photos/61/02/16/thmb_122461021625e.jpg" alt="İkinci El ve Sıfır Alışveriş / Müzik / Müzik Aletleri / Telli Çalgılar / Gitar / Elektro" title="İkinci El ve Sıfır Alışveriş / Müzik / Müzik Aletleri / Telli Çalgılar / Gitar / Elektro" data-hj-suppress="">
+                                </label>
+                            </li>
+                        <li>
+                                <label for="images_1" class="" data-megaindex="1">
+                                    <img class="thmbImg" src="https://i0.shbdn.com/photos/61/02/16/thmb_1224610216y9y.jpg" alt="FujiGen Elektro Gitar" title="FujiGen Elektro Gitar" data-hj-suppress="">
+                                </label>
+                            </li>
+                        <li>
+                                <label for="images_2" class="" data-megaindex="2">
+                                    <img class="thmbImg" src="https://i0.shbdn.com/photos/61/02/16/thmb_1224610216n5l.jpg" alt="İkinci El ve Sıfır Alışveriş / Müzik / Müzik Aletleri / Telli Çalgılar / Gitar / Elektro" title="İkinci El ve Sıfır Alışveriş / Müzik / Müzik Aletleri / Telli Çalgılar / Gitar / Elektro" data-hj-suppress="">
+                                </label>
+                            </li>
+                        <li>
+                                <label for="images_3" class="" data-megaindex="3">
+                                    <img class="thmbImg" src="https://i0.shbdn.com/photos/61/02/16/thmb_12246102161ip.jpg" alt="FujiGen Elektro Gitar" title="FujiGen Elektro Gitar" data-hj-suppress="">
+                                </label>
+                            </li>
+                        </ul>
+                </li>
+            </ul>
+        <div class="classified-images-status">
+            <span class="images-count">
+                <span class="current-image">1</span>/4&nbsp;Fotoğraf</span>
+            </div>
+    </div>
+
+</div>
+
+<!-- For the Classified Photos Loading Report -->
+<script type="text/javascript">
+var checkClassifiedPhotos = function () {
+var readCookie = function (name) {
+        var nameEQ = name + '=',
+            ca = document.cookie.split(';'),
+            i = 0,
+            c;
+        for (; i < ca.length; i++) {
+            c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1, c.length);
+            }
+            if (c.indexOf(nameEQ) === 0) {
+                return c.substring(nameEQ.length, c.length);
+            }
+        }
+        return null;
+    },
+    param = function (object) {
+        var encodedString = '',
+            prop;
+        for (prop in object) {
+            if (object.hasOwnProperty(prop)) {
+                if (encodedString.length > 0) {
+                    encodedString += '&';
+                }
+                encodedString += encodeURI(prop + '=' + object[prop]);
+            }
+        }
+        return encodedString;
+    },
+    post = function (requestUrl, data) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', requestUrl + '?' + param(data));
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send();
+    },
+    isImageLoaded = function (img) {
+        return (img && !img.complete && !img.naturalWidth) ? false : true;
+    },
+    createAndSendPhotosReport = function () {
+        var standartImage = document.getElementsByClassName('stdImg')[0],
+            thumbnailImages = document.getElementsByClassName('thmbImg'),
+            thumbnailImagesLength = thumbnailImages.length,
+            data = {
+                id: standartImage ? (standartImage.src.split('_')[1] ? standartImage.src.split('_')[1].slice(0, -7) : 0) : 0,
+                x5Loaded: false,
+                thmbsLoaded: false,
+                thmbsTotal: thumbnailImagesLength,
+                thmbsLoadCount: 0,
+                timeout: timeout
+            },
+            i = 0,
+            thumbnailPath;
+
+        // For Standart Image
+        if (isImageLoaded(standartImage)) {
+            data.x5Loaded = true;
+        } else {
+            data.x5 = standartImage.src.slice(-7, -4);
+        }
+
+        // For Thumbnail Images
+        for (i; i < thumbnailImagesLength; i++) {
+            if (isImageLoaded(thumbnailImages[i])) {
+                data.thmbsLoadCount++;
+            } else {
+                thumbnailPath = thumbnailImages[i].src;
+
+                if (data.thmbs) {
+                    data.thmbs += ',' + thumbnailPath.slice(-7, -4);
+                } else {
+                    data.thmbs = thumbnailPath.slice(-7, -4);
+                }
+            }
+        }
+
+        // Is All Thumbnails Loaded
+        if (thumbnailImagesLength == data.thmbsLoadCount) {
+            data.thmbsLoaded = true;
+        }
+
+        // Send Report
+        post('/ajax/classifiedPhotosReport', data);
+
+        // Any Photos Are Not Loaded
+        if (timeout < 32000) { // Max Time: 32s - Max Request: 6
+            if (!data.x5Loaded || !data.thmbsLoaded) {
+                previousTimeout = timeout;
+                timeout *= 2;
+
+                setTimeout(createAndSendPhotosReport, timeout - previousTimeout);
+            }
+        }
+    },
+    timeout = 1000,
+    previousTimeout;
+
+// Open For 10%
+if (readCookie('vid') < 100) {
+    setTimeout(createAndSendPhotosReport, timeout);
+}
+};
+
+// For the Encapsulation
+checkClassifiedPhotos();
+</script>
+<!-- For the Classified Photos Loading Report -->
+<div class="classifiedInfo ">
+                    <h3>
+            <span class="classified-price-wrapper"> 42.000 TL</span>
+
+        <input id="priceHistoryFlag" type="hidden" value="">
+<input id="priceHistoryClassifiedId" type="hidden" value="">
+<input id="priceHistoryFavorite" type="hidden" value="">
+<div id="price-history-wrapper" class="price-history-wrapper">
+
+<div id="price-icon-wrapper" class="price-history-wrapper tipitip-trigger price-history-icon" data-class="price-history" data-position="south" data-content="Fiyat Tarihçesi">
+</div>
+
+<span id="splash-price-history-icon"></span>
+
+<div id="price-history-dropdown" class="price-history-wrapper price-history-info">
+
+    <div class="section-top">
+        <div class="section-title">
+            <span class="for-classified-owner">
+                Fiyat Tarihçesi</span>
+        </div>
+    </div>
+
+    <div class="section-main">
+
+        <div class="price-general-info-wrapper">
+
+            <ul class="price-history-summary">
+                <li class="price-history-summary-item first-price">
+                    <p class="history-header">
+                        {{}} Fiyatı</p>
+                    <p id="initialPriceTemplate" class="history-body"></p>
+                </li>
+                <li class="price-history-summary-item price-holder">
+                    <div class="price-change-icon"></div>
+                </li>
+                <li class="price-history-summary-item second-price">
+                    <p class="history-header ">
+                        Şu Anki
+Fiyatı</p>
+                    <p class="history-body" id="realPriceTemplate"></p>
+                </li>
+            </ul>
+
+            <div class="price-general-info"></div>
+
+            <div class="new-car-info-wrapper">
+                <div class="new-car-info"></div>
+                <a class="new-car-info-link" target="_blank"></a>
+            </div>
+
+        </div>
+
+        <div id="table-wrapper" class="table-wrapper">
+            <table class="price-history-table">
+                <tbody>
+                    <tr id="history-row">
+                        <td class="for-classified-owner">
+                            İlanın Yayınlandığı
+Fiyat<p class="inner-date"></p>
+                        </td>
+                        <td class="for-classified-favourite">
+                            Favoriye Eklendiğindeki Fiyat<p class="inner-date"></p>
+                        </td>
+                        <td class="history-price"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="price-all">
+            <a>
+                Tüm Fiyat Değişimlerini Gör</a>
+        </h3>
+
+    </div>
+</div>
+</div>
+</h3>
+<input type="hidden" id="favoriteClassifiedPrice" value=" 42.000 TL">
+                        <h2>
+        <a href="/elektro-gitar?address_country=1&amp;address_city=41" data-click-category="İlan Detay Events" data-click-event="Click - Detay Alanı" data-click-label="Adres Breadcrumb | Kocaeli">
+                    Kocaeli</a>
+            <span>/</span>
+                        <a href="/elektro-gitar?address_town=544&amp;address_country=1&amp;address_city=41" data-click-category="İlan Detay Events" data-click-event="Click - Detay Alanı" data-click-label="Adres Breadcrumb | İzmit">
+                            İzmit</a>
+                    <span>/</span>
+                        <a href="/elektro-gitar?address_country=1&amp;address_quarter=27822&amp;address_town=544&amp;address_district=2592&amp;address_city=41" data-click-category="İlan Detay Events" data-click-event="Click - Detay Alanı" data-click-label="Adres Breadcrumb | Yahyakaptan Mah.">
+                            Yahyakaptan Mah.</a>
+                    </h2><ul class="classifiedInfoList">
+
+<li>
+    <strong>İlan No</strong>&nbsp;
+    <span class="classifiedId" id="classifiedId" data-classifiedid="1224610216">1224610216</span>
+    </li>
+<li>
+        <strong>
+            İlan Tarihi</strong>&nbsp;
+        <span>
+            22 Ocak 2025</span>
+    </li>
+<li>
+            <strong>Marka</strong>&nbsp;
+            <span class="">
+                FujiGen</span>
+        </li>
+    <li>
+            <strong>Çalma Biçimi</strong>&nbsp;
+            <span class="">
+                Standart</span>
+        </li>
+    <li>
+            <strong>Manyetik Dizilimi</strong>&nbsp;
+            <span class="">
+                HH</span>
+        </li>
+    <li>
+            <strong>Zırhı (Pickguard)</strong>&nbsp;
+            <span class="">
+                Var</span>
+        </li>
+    <li>
+            <strong>Köprü Türü</strong>&nbsp;
+            <span class="">
+                Sabit</span>
+        </li>
+    <li>
+            <strong>Kimden</strong>&nbsp;
+            <span class="fromOwner">
+                Sahibinden</span>
+        </li>
+    <li>
+    <strong>Durumu</strong>&nbsp;
+    <span>
+        İkinci El&nbsp;
+        </span>
+</li>
+</ul>
+
+<form class="hidden-attributes">
+<input type="hidden" autocomplete="off" readonly="readonly" name="classifiedId" id="attrClassifiedId" value="1224610216">
+<input type="hidden" autocomplete="off" readonly="readonly" name="isShipping" id="attrIsShipping" value="false">
+<input type="hidden" autocomplete="off" readonly="readonly" name="isPurchasedBefore" id="attrIsPurchasedBefore" value="false">
+</form><input type="hidden" id="feature-discovery-web-buy-product" value="true"><script>
+                        window.gaParis = null;
+                    </script>
+
+                    <div class="disable">
+<div id="paris-purchase-buy-info">
+    <h3 class="header-text">Param Güvende ile Satın Alma Talebi</h3>
+    <div class="lightbox-content"></div>
+</div>
+
+<div id="paris-purchase-buy-warning">
+    <h3 class="header-text">Bilgilendirme</h3>
+    <div class="lightbox-content lightbox-content-warning"></div>
+</div>
+</div>
+<div class="not-paris-category">
+    <span><b>Param Güvende</b> hizmeti bu kategorideki ürünler için sunulmamaktadır.</span>
+</div>
+<p class="classifiedIdBox  ">
+    <a href="javascript:" rel="nofollow" class="classifiedFeedback">
+            <span>İlan ile İlgili Şikayetim Var</span>
+        </a>
+    </p>
+</div>
+
+                <div class="classifiedOtherBoxes paris-seller-profile">
+
+                    <div class="classifiedOtherBoxesContainer">
+                        <div class="classifiedUserBox classified-owner-info common-design " data-nosnippet="">
+
+<div class="classifiedUserContent ">
+
+        <div class="username-info-area" data-hj-suppress="" data-nosnippet="">
+            <div class="paris-name-area">
+<div class="paris-name">
+    <style>.css241676f3-17b7-481d-bb96-70eee4678f4d:before {content: 'Ali Ö.';}</style>
+            <span class="css241676f3-17b7-481d-bb96-70eee4678f4d"></span>
+            </div>
+</div></div>
+
+        <div class="getUserInfo noBorder">
+
+            <p class="userRegistrationDate">
+                    Hesap açma tarihi: <span>Aralık 2024</span>
+                </p>
+            <ul class="userLinks ">
+                    <li>
+                        <a class="trackClick userClassifieds" id="ownersClassifieds" href="/arama?userId=anAK2Yyt4oYONhI8MiaNkLQ" data-click-category="İlan Detay Events" data-click-event="Click - İlan Sahibi Alanı" data-click-label="Tüm İlanları" rel="nofollow">
+                            Tüm ilanları</a>
+                    </li>
+                    <li>
+                                <a class="userClassifiedprofile trackLinkClick trackId_kullanici_profili" href="/satici-profili/alio-bXtZrjccx353MHsqOD5NFLw" rel="nofollow">
+                                    Profili</a>
+                            </li>
+                        <li id="favoriteSellerAddLink">
+        <a rel="nofollow" class="followUser " id="loginPopupFavoriteSellerAdd" href="https://secure.sahibinden.com/giris/?return_url=/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-made-in-japan-les-paul-processor-ile-takas-dusunulur-1224610216/detay?showAddFavoriteSeller=true">Favori Satıcılarıma ekle</a>
+    </li>
+</ul>
+            <!-- isOwner dialog -->
+            <div class="disable">
+                <div id="infoIsOwnerPopupDialog">
+                    <div class="info-add-popup-container">
+                        <span>Kendinizi favori satıcılarınıza ekleyemezsiniz.</span>
+                    </div>
+
+                    <div class="btn-holder">
+                        <button type="submit" class="btn btn-simple dialog-closer">Tamam</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- favorite seller dialogs -->
+            <div class="disable">
+                <div id="favoriteSellerAddDialog" class="favorite-seller-dialogs">
+                    <h3>Favori Satıcılarıma ekle</h3>
+
+                    <ul class="form-style-wrapper">
+                        <li>
+                            <span for="title">Favori Satıcı Adı</span>
+                            <dl>
+                                <dt><strong>
+                                    <style>.css00600850-46a1-4d72-b5e7-33da9c9371ac:before {content: 'Ali Ö.';}</style>
+                                            <span class="css00600850-46a1-4d72-b5e7-33da9c9371ac"></span>
+                                            </strong></dt>
+                            </dl>
+                        </li>
+                        <li>
+                            <span>Günlük Bildirim Ayarları</span>
+                            <dl>
+                                <dt>
+                                    <input type="checkbox" id="favAddSellerEmailNotifications" checked="checked">
+                                    <label for="favAddSellerEmailNotifications" class="checkbox">
+                                        E-posta Bildirimi</label>
+                                </dt>
+                            </dl>
+                        </li>
+                    </ul>
+
+                    <p class="note">Bildirim durumu 90 gün boyunca açık olup sonrasında otomatik olarak kapanacaktır. Ayrıca dilediğiniz zaman <strong>Bana Özel &gt; Favori Satıcılar</strong> sayfasından bildirimleri açıp kapatabilirsiniz.</p>
+
+                    <p class="dialog-buttons">
+                        <a class="btn btn-new btn-new-alternative btn-form close">Vazgeç</a>
+                        <button id="btnSaveFavoriteSeller" type="submit" class="btn btn-new btn-form trackClick" data-click-category="İlan Detay Events" data-click-event="Click - İlan Sahibi Alanı" data-click-label="Favori Satıcılarıma Ekle">
+                            Kaydet</button>
+                    </p>
+                </div>
+
+                <div id="favoriteSellerRemoveDialog" class="favorite-seller-dialogs">
+                    <h3>Favori Satıcılarımdan Çıkar</h3>
+
+                    <ul class="form-style-wrapper">
+                        <li>
+                            <p><strong>
+                                <style>.css26d7836c-c6ed-404d-83df-2808bc3ef37c:before {content: 'Ali Ö.';}</style>
+                                        <span class="css26d7836c-c6ed-404d-83df-2808bc3ef37c"></span>
+                                        </strong>&nbsp;isimli favori satıcınızı silmek istediğinizden emin misiniz?</p>
+                        </li>
+                    </ul>
+
+                    <p class="dialog-buttons">
+                        <a class="btn btn-alternative btn-form close">Vazgeç</a>
+                        <button id="btnRemoveFavoriteSeller" type="submit" class="btn btn-warning btn-form">Sil</button>
+                    </p>
+                </div>
+
+                <input type="hidden" id="sellerId" value="89820130">
+                <input type="hidden" id="isOwner" value="false">
+            </div>
+            <!-- /favorite seller dialogs -->
+        </div>
+        <ul id="phoneInfoPart" class="userContactInfo" data-hj-suppress="">
+                        <li>
+                                    <strong class="mobile">Cep</strong>
+
+                                    <style>.css4ee959de-c80e-4070-b83f-f8a8abe08093:before {content: attr(data-content);}</style>
+                                    <span class="pretty-phone-part show-part"><span class="css4ee959de-c80e-4070-b83f-f8a8abe08093" data-content="0 (530) 792 81 69"></span></span>
+                                    <script type="text/javascript">document.querySelector('span.css4ee959de-c80e-4070-b83f-f8a8abe08093').setAttribute('data-content', '0 (530) 792 81 69');</script>
+                                    <style>.css6a1196b4-21e4-4f57-837b-ed85bf0d10ae:before {content: '0 (530) *** ** 69';}</style>
+                                    <span class="encrypted-phone-part"><span class="css6a1196b4-21e4-4f57-837b-ed85bf0d10ae"></span></span>
+                                    </li>
+                            </ul>
+                <div class="link-wrapper">
+    <a class="askQuestion cqa-ask-question" href="javascript:void(0)">Soru Sor</a>
+    <input type="hidden" id="feature-discovery-web-ask-question" value="true">
+</div>
+</div>
+</div>
+<div class="paris-detail-warning-area">
+        <div class="paris-warning-title">
+            <span>Güvenlik İpuçları</span>
+        </div>
+
+        <div class="paris-warning-body">
+            <p style="font-size:11px; font-weight:400; line-height:15px; color:#888888;">WhatsApp vb. uygulamalar veya e-posta, SMS ile iletilen ve <a style="color:#003399;" href="https://www.sahibinden.com/param-guvende/bireysel" rel="noopener noreferer" target="_blank"><span class="spg-text" style="display: inline-block;">S-Param Güvende</span></a><b style="font-weight:700;">’yi taklit eden şüpheli linklere</b> tıklayıp bir ödeme yapmayın.</p> <p style="font-size:11px; font-weight:400; line-height:15px; color:#888888;">İşlemleriniz için lütfen sadece sahibinden.com uygulaması ve web sitesini kullanın.<a href="https://yardim.sahibinden.com/hc/tr/articles/8402707984924-G%C3%BCvenlik-%C4%B0pu%C3%A7lar%C4%B1" rel="noopener noreferer" target="_blank"> Detaylı bilgi</a></p></div>
+    </div>
+<script type="text/javascript">
+var bannerZoneId = "34";
+var readCookie = function (name) {
+    var nameEQ = name + '=',
+        ca = document.cookie.split(';'),
+        i = 0,
+        c;
+    for (; i < ca.length; i++) {
+        c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1, c.length);
+        }
+        if (c.indexOf(nameEQ) === 0) {
+            return c.substring(nameEQ.length, c.length);
+        }
+    }
+    return null;
+};
+</script>
+
+<script type="text/javascript">
+
+document.domain = "sahibinden.com"
+var cAttributes = "&amp;MARKA=FujiGen&amp;ÇALMA_BİÇİMİ=Standart&amp;MANYETİK_DİZİLİMİ=HH&amp;ZIRHI_(PİCKGUARD)=Var&amp;KÖPRÜ_TÜRÜ=Sabit&amp;KİMDEN=Sahibinden&amp;HASEUROTAX=false";
+
+var classifiedAttributesZone1 = "&amp;PAGE_NAME=ilan_detay_zone_1&amp;CATEGORY_ID=24573&amp;PARENT_ID=24563&amp;CATEGORY_LEVEL_0=7&amp;CATEGORY_LEVEL_1=24541&amp;CATEGORY_LEVEL_2=173502&amp;CATEGORY_LEVEL_3=24567&amp;CATEGORY_LEVEL_4=24563&amp;CATEGORY_LEVEL_5=24573&amp;CATEGORY_LEVEL_6=0&amp;LANGUAGE=tr&amp;CITY_ID=41&amp;DISTRICT_ID=2592&amp;TOWN_ID=544&amp;QUARTER_ID=27822&amp;PRICE=42000&amp;FRACTION=0&amp;STORE_ID=" + cAttributes;
+var classifiedAttributesZone2 = "&amp;PAGE_NAME=ilan_detay_zone_2&amp;CATEGORY_ID=24573&amp;PARENT_ID=24563&amp;CATEGORY_LEVEL_0=7&amp;CATEGORY_LEVEL_1=24541&amp;CATEGORY_LEVEL_2=173502&amp;CATEGORY_LEVEL_3=24567&amp;CATEGORY_LEVEL_4=24563&amp;CATEGORY_LEVEL_5=24573&amp;CATEGORY_LEVEL_6=0&amp;LANGUAGE=tr&amp;CITY_ID=41&amp;DISTRICT_ID=2592&amp;TOWN_ID=544&amp;QUARTER_ID=27822&amp;PRICE=42000&amp;FRACTION=0&amp;STORE_ID=" + cAttributes;
+
+getBanner(bannerZoneId, classifiedAttributesZone1);
+getBanner(bannerZoneId, classifiedAttributesZone2);
+
+function getDfpTargetingTags() {
+    var dfpTargetingTags = {
+        "classified_id": "1224610216",
+        "category_id": "24573",
+        "parent_id": "24563",
+        "country": "1",
+        "city": "41",
+        "district": "2592",
+        "town": "544",
+        "quarter": "27822",
+        "price": "40000-45000",
+        "fraction": "0",
+        "store_id": ""
+    };
+    
+    dfpTargetingTags['category_1'] = "7";
+    
+    dfpTargetingTags['category_2'] = "24541";
+    
+    dfpTargetingTags['category_3'] = "173502";
+    
+    dfpTargetingTags['category_4'] = "24567";
+    
+    dfpTargetingTags['category_5'] = "24563";
+    
+    dfpTargetingTags['category_6'] = "24573";
+    
+    dfpTargetingTags['zirhi_(pickguard)'] = "Var";
+    
+    dfpTargetingTags['kopru_turu'] = "Sabit";
+    
+    dfpTargetingTags['marka'] = "FujiGen";
+    
+    dfpTargetingTags['calma_bicimi'] = "Standart";
+    
+    dfpTargetingTags['manyetik_dizilimi'] = "HH";
+    
+    dfpTargetingTags['kimden'] = "Sahibinden";
+    
+
+    dfpTargetingTags['haseurotax'] = "false";
+
+    
+
+    dfpTargetingTags['language'] = "tr";
+
+    
+
+    return dfpTargetingTags;
+}
+
+function setDfpTargetingTags() {
+    var tags = getDfpTargetingTags();
+    if (typeof googletag !== 'undefined' && typeof googletag.pubads !== 'undefined') {
+        for (var key in tags) {
+            googletag.pubads().setTargeting(key, tags[key]);
+        }
+    }
+}
+
+var onSlotRenderEnded = function (event) {
+    // if 300x250 banner is empty, hide it. Else, give height
+    if (typeof (event.slot) != 'undefined' && event.slot.getAdUnitPath() == '/32607536/addetail_300x250') {
+        var banner300 = $('#div-gpt-ad-1452674926178-0');
+        if (event.isEmpty) {
+            banner300.hide();
+        } else {
+            banner300.css("height", "250px");
+        }
+    }
+};
+</script>
+
+<script>
+    googletag.cmd.push(function () {
+        displayAds();
+    });
+
+    var AdSlotRefresher = function (slot) {
+        var pathName = document.location.pathname;
+        var secondHandShopping = 'ikinci-el-ve-sifir-alisveris';
+        var havePathName = pathName.includes(secondHandShopping);
+        var DEFAULT_DELAY = 30000, QUICK_DELAY = 5000;
+        var _$slot = document.querySelector('#' + slot.getSlotElementId());
+        var _timeoutId;
+        var _slot = slot;
+
+        var refreshSlot = function () {
+            if (!document.hidden && isSlotInViewPort()) {
+                dfpLibraryHelper.gptApi.refreshSlots([_slot]);
+            } else {
+                if (havePathName) {
+                    countDownForRefreshing(DEFAULT_DELAY);
+                } else {
+                    countDownForRefreshing(QUICK_DELAY);
+                }
+            }
+        };
+
+        if (havePathName) {
+            const handleVisibilityChange = function() {
+                if (document.visibilityState === 'visible') {
+                    countDownForRefreshing(DEFAULT_DELAY);
+                } else {
+                    console.log('lost focus');
+                }
+            }
+            document.addEventListener("visibilitychange", handleVisibilityChange);
+        }
+
+        var isSlotInViewPort = function () {
+            var rect = _$slot.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= window.innerHeight &&
+                rect.right <= window.innerWidth
+            );
+        };
+
+        var countDownForRefreshing = function (delay) {
+            clearTimeout(_timeoutId);
+            _timeoutId = setTimeout(refreshSlot, delay);
+        };
+
+        var onSlotRenderEnded = function(event) {
+            if (event.slot === _slot) {
+                countDownForRefreshing(DEFAULT_DELAY);
+            }
+        };
+
+        this.start = function () {
+            googletag.pubads().addEventListener('slotRenderEnded', onSlotRenderEnded);
+        };
+    };
+
+    function displayAds() {
+        dfpLibraryHelper.initPrebid().then(function () {
+            googletag.destroySlots();
+            setDfpTargetingTags();
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().disableInitialLoad();
+            googletag.pubads().addEventListener('slotRenderEnded', onSlotRenderEnded);
+            var addDetail1Slot = googletag.defineSlot('/32607536/addetail_300x250', [300, 250], 'div-gpt-ad-1452674926178-0');
+            var addDetail2Slot = googletag.defineSlot('/32607536/addetail_970x250', [[970, 250], [940, 250]], 'div-gpt-ad-1585295062503-0');
+            
+                var refresher = new AdSlotRefresher(addDetail1Slot);
+                refresher.start();
+            
+            googletag.enableServices();
+
+            var addDetail1SlotPrebidConfig = {
+                code: '/32607536/addetail_300x250',
+                mediaTypes: {
+                    banner: {
+                        sizes: [300, 250]
+                    }
+                },
+                bids: [
+                    {
+                        bidder: "adform",
+                        params: {
+                            mid: '1342202',
+                            priceType: 'net',
+                            rcur: 'TRY'
+                        }
+                    },
+                    {
+                        bidder: "adform",
+                        params: {
+                            mid: '680233',
+                            priceType: 'net',
+                            rcur: 'TRY'
+                        }
+                    }
+                ]
+            };
+            var addDetail2SlotPrebidConfig = {
+                code: '/32607536/addetail_970x250',
+                mediaTypes: {
+                    banner: {
+                        sizes: [[970, 250], [940, 250]]
+                    }
+                },
+                bids: [
+                    {
+                        bidder: "adform",
+                        params: {
+                            mid: '799298',
+                            priceType: 'net',
+                            rcur: 'TRY'
+                        }
+                    },
+                    {
+                        bidder: "adform",
+                        params: {
+                            mid: '1637330',
+                            priceType: 'net',
+                            rcur: 'TRY'
+                        }
+                    },
+                    {
+                        bidder: 'stroeerCore',
+                        params: {
+                            sid: '4113f242-ff39-4c9a-8c71-9853e673b857'
+                        }
+                    }
+                ]
+            };
+
+            var slots = [addDetail1Slot, addDetail2Slot];
+            var prebidAdUnits = [addDetail1SlotPrebidConfig, addDetail2SlotPrebidConfig];
+
+            dfpLibraryHelper.gptApi.addPubServiceSlots(slots);
+            dfpLibraryHelper.gptApi.displaySlots(slots);
+
+            if (prebidAdUnits && prebidAdUnits.length > 0) {
+                dfpLibraryHelper.prebidApi.requestBids(prebidAdUnits)
+                    .then(function () {
+                        dfpLibraryHelper.gptApi.refreshSlots(slots);
+                    })
+            } else {
+                dfpLibraryHelper.gptApi.refreshSlots(slots);
+            }
+        });
+    }
+</script>
+<div id="div-gpt-ad-1452674926178-0" style="height:0; width:300px; margin-top: 12px; min-height: 250px;"></div>
+</div>
+</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="classifiedOtherDetails">
+
+            <div id="classified-tabs" class="mini-tab">
+    <script>
+        function onToyotaClick() {
+            $('#toyotaClick').attr('src', 'https://pubads.g.doubleclick.net/gampad/clk?id=6389165990&iu=/32607536/click_tracking')
+        }
+    </script>
+    <img id="toyotaClick" src="" style="display: none">
+    <ul class="uiTabStyleOne classifiedDetailTabs">
+        <li class="tab-classified-detail active">
+                <a href="#classified-detail">
+                    İlan Detayları</a>
+            </li>
+        <li class="tab-location" id="harita">
+                <a href="#classified-location">
+                    Konumu</a>
+            </li>
+        </ul>
+</div>
+<div id="classified-detail" class="mini-tab-content" style="display: block;">
+
+<div class="uiBox">
+<div class="uiBoxTitle">
+    <h3 class="uiDetailTitle">
+        <a href="#classifiedDescription">Açıklama</a>
+    </h3>
+</div>
+<div id="classifiedDescription" class="uiBoxContainer">
+    <p>son fiyat..<br>
+<u>Fujigen</u> Neo Classic NLC10RMP Garantisi devam ediyor nisan 2024 tarihinde alinmistir. temiz bir sekilde kilifinda duruyor kullanmiyorum. takas sadece prosesör ile olabilir. takas fiyati 46.000tl</p>
+</div>
+</div>
+
+<script>
+var count = 0;
+false ? count++:count;
+false ? count++:count;
+false ? count++:count;
+false ? count++:count;
+if (count === 2) {
+    document.querySelector(".car-damage-info-list").style.display = 'flex';
+}
+</script><div class="ref-cqa-tab-classified-detail">
+<section id="soru" class="classified-question-answer" data-platform="WEB" data-flags="ANSWER_THREAD_ENABLED" data-store="false" data-classified-id="1224610216">
+    <div class="uiBox">
+        <div class="uiBoxTitle">
+            <h3 class="uiDetailTitle">
+                <a href="#soru-cevap">Soru-Cevap</a>
+            </h3>
+            <div class="container-publish-criteria">
+                    <button type="button" class="show-publication-criteria">Yayınlanma Kriterleri</button>
+                </div>
+            </div>
+
+        <div id="soru-cevap" class="uiBoxContainer">
+            <div class="container-cqa">
+<div class="cqa-list" data-flags="AFTER_ENDED PREV_ENDED" data-nosnippet="" style="overflow:visible" data-scroll-state="READY">
+    <div class="thread-item has-answer" data-question-id="45387200" data-status="ACTIVE" data-answer-id="29832296" data-nosnippet="">
+<div class="wrapper-thread-item">
+    <div class="wrapper-comment-item">
+
+        <div class="container-comment-item type-question" data-question-id="45387200">
+                <div class="comment-item comment-owner-individual asker">
+<div class="container-profile-image">
+    <a class="comment-profile-wrapper" href="/satici-profili/aytaccokgungor-b9sjI9YRMxn205O81U_QAJw" target="_self">
+        <div class="comment-profile-image no-photo" style=""></div>
+    </a>
+</div>
+
+<div class="container-comment">
+<div class="comment-wrapper">
+    <a href="/satici-profili/aytaccokgungor-b9sjI9YRMxn205O81U_QAJw" target="_self" class="name-surname">Aytaç Çokgüngör</a>
+    <span class="comment-text">orange rocker 32 + nakit düşünür müsün</span>
+</div>
+<div class="answer-thread-comment-wrapper">
+    <div class="comment-date" title="23 January 2025, 12:18:06">17 saat önce</div>
+    </div>
+</div><div class="container-thread-actions" data-operation-abilities="">
+<div class="wrapper-thread-actions">
+    <div class="answer-thread-eye-icon-wrapper ">
+        <div class="answer-thread-eye-icon" data-eye-icon-text=""></div>
+    </div>
+
+    <div class="container-comment-operations">
+        <a class="popup-operations">
+            <span class="popup-closer"></span>
+            <span class="hide-on-responsive">İşlemler&nbsp;&nbsp;▾</span>
+            <span class="hide-on-web three-dots"></span>
+
+            <form class="wrapper-popup-operations" onsubmit="return false" novalidate="">
+                <input type="hidden" name="questionId" value="45387200">
+                <input type="hidden" name="answerId" value="29832296">
+                <input type="hidden" name="sellerId" value="89820130">
+                <input type="hidden" name="buyerId" value="2488269">
+                <input type="hidden" name="isPreparedQuestion" value="false">
+
+                <div class="container-popup-operations">
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="DELETE_QUESTION">Soruyu sil</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="COMPLAINT_ANSWER">Cevabı Şikayet Et</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="BLOCK_SELLER">Satıcıyı engelle</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="UNBLOCK_SELLER">Engeli kaldır</button>
+
+                    <button type="button" class="popup-operation for-responder hide-on-web hidden disable" name="operation" value="REPLY_QUESTION">Yanıtla</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="DELETE_ANSWER">Cevabı sil</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="COMPLAINT_BUYER">Soruyu şikayet et</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="BLOCK_BUYER">Hesap sahibini engelle</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="UNBLOCK_BUYER">Engeli kaldır</button>
+                </div>
+            </form>
+        </a>
+    </div>
+</div>
+</div></div>
+</div>
+        <div class="platform-web show-all-answers disable" data-question-id="45387200">
+                Tüm cevapları gör
+            </div>
+            <div class="container-comment-item type-answer last-answer-item" data-question-id="45387200" data-answer-id="29832296">
+                <div class="comment-item comment-owner-individual asker">
+<div class="container-profile-image">
+    <a class="comment-profile-wrapper" href="/satici-profili/alio-bXtZrjccx353MHsqOD5NFLw" target="_self">
+        <div class="comment-profile-image no-photo" style=""></div>
+    </a>
+</div>
+
+<div class="container-comment">
+<div class="comment-wrapper">
+    <a href="/satici-profili/alio-bXtZrjccx353MHsqOD5NFLw" target="_self" class="name-surname">Ali Ö.</a>
+    <span class="comment-text">cok tesekkurler saglam amfi ama boss/zoom processor ile takas dusunuyorum</span>
+</div>
+<div class="answer-thread-comment-wrapper">
+    <div class="comment-date" title="23 January 2025, 12:54:15">17 saat önce</div>
+    </div>
+</div><div class="container-thread-actions" data-operation-abilities="">
+<div class="wrapper-thread-actions">
+    <div class="answer-thread-eye-icon-wrapper ">
+        <div class="answer-thread-eye-icon" data-eye-icon-text=""></div>
+    </div>
+
+    <div class="container-comment-operations">
+        <a class="popup-operations">
+            <span class="popup-closer"></span>
+            <span class="hide-on-responsive">İşlemler&nbsp;&nbsp;▾</span>
+            <span class="hide-on-web three-dots"></span>
+
+            <form class="wrapper-popup-operations" onsubmit="return false" novalidate="">
+                <input type="hidden" name="questionId" value="45387200">
+                <input type="hidden" name="answerId" value="29832296">
+                <input type="hidden" name="sellerId" value="89820130">
+                <input type="hidden" name="buyerId" value="2488269">
+                <input type="hidden" name="isPreparedQuestion" value="false">
+
+                <div class="container-popup-operations">
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="DELETE_QUESTION">Soruyu sil</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="COMPLAINT_ANSWER">Cevabı Şikayet Et</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="BLOCK_SELLER">Satıcıyı engelle</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="UNBLOCK_SELLER">Engeli kaldır</button>
+
+                    <button type="button" class="popup-operation for-responder hide-on-web hidden disable" name="operation" value="REPLY_QUESTION">Yanıtla</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="DELETE_ANSWER">Cevabı sil</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="COMPLAINT_BUYER">Soruyu şikayet et</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="BLOCK_BUYER">Hesap sahibini engelle</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="UNBLOCK_BUYER">Engeli kaldır</button>
+                </div>
+            </form>
+        </a>
+    </div>
+</div>
+</div></div>
+</div>
+            <div class="container-comment-item type-answer list-answer-item disable" data-question-id="45387200" data-answer-id="29832296">
+                    <div class="comment-item comment-owner-individual asker">
+<div class="container-profile-image">
+    <a class="comment-profile-wrapper" href="/satici-profili/alio-bXtZrjccx353MHsqOD5NFLw" target="_self">
+        <div class="comment-profile-image no-photo" style=""></div>
+    </a>
+</div>
+
+<div class="container-comment">
+<div class="comment-wrapper">
+    <a href="/satici-profili/alio-bXtZrjccx353MHsqOD5NFLw" target="_self" class="name-surname">Ali Ö.</a>
+    <span class="comment-text">cok tesekkurler saglam amfi ama boss/zoom processor ile takas dusunuyorum</span>
+</div>
+<div class="answer-thread-comment-wrapper">
+    <div class="comment-date" title="23 January 2025, 12:54:15">17 saat önce</div>
+    </div>
+</div><div class="container-thread-actions" data-operation-abilities="">
+<div class="wrapper-thread-actions">
+    <div class="answer-thread-eye-icon-wrapper ">
+        <div class="answer-thread-eye-icon" data-eye-icon-text=""></div>
+    </div>
+
+    <div class="container-comment-operations">
+        <a class="popup-operations">
+            <span class="popup-closer"></span>
+            <span class="hide-on-responsive">İşlemler&nbsp;&nbsp;▾</span>
+            <span class="hide-on-web three-dots"></span>
+
+            <form class="wrapper-popup-operations" onsubmit="return false" novalidate="">
+                <input type="hidden" name="questionId" value="45387200">
+                <input type="hidden" name="answerId" value="29832296">
+                <input type="hidden" name="sellerId" value="89820130">
+                <input type="hidden" name="buyerId" value="2488269">
+                <input type="hidden" name="isPreparedQuestion" value="false">
+
+                <div class="container-popup-operations">
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="DELETE_QUESTION">Soruyu sil</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="COMPLAINT_ANSWER">Cevabı Şikayet Et</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="BLOCK_SELLER">Satıcıyı engelle</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="UNBLOCK_SELLER">Engeli kaldır</button>
+
+                    <button type="button" class="popup-operation for-responder hide-on-web hidden disable" name="operation" value="REPLY_QUESTION">Yanıtla</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="DELETE_ANSWER">Cevabı sil</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="COMPLAINT_BUYER">Soruyu şikayet et</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="BLOCK_BUYER">Hesap sahibini engelle</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="UNBLOCK_BUYER">Engeli kaldır</button>
+                </div>
+            </form>
+        </a>
+    </div>
+</div>
+</div></div>
+</div>
+            </div>
+
+    <div class="container-informative-box level-default comment-private-view">
+        <span class="for-responder"></span>
+        <span class="for-questioner"></span>
+    </div>
+</div>
+</div></div>
+
+<div class="container-post-question">
+<div class="new-info-container">
+        <div class="info-privacy">
+            <span class="sui-color-emphasis-low">Ürün ile ilgili merak ettiklerinizi sorabilirsiniz.</span>
+        </div>
+    </div>
+<form class="form-post-question" method="post" novalidate="" onsubmit="return false;">
+    <div class="container-post-idea">
+        <div class="container-info-privacy">
+            <div class="info-privacy">
+                <span>Soru ve cevapları herkes görür.</span>
+            </div>
+
+            <div class="container-publish-criteria">
+                <button type="button" class="show-publication-criteria">Yayınlanma Kriterleri</button>
+            </div>
+        </div>
+
+        <div class="post-idea">
+            <div class="container-post-profile-image">
+                <a class="comment-profile-image-wrapper" href="javascript:void(0)" target="_self">
+                    <div class="comment-profile-image no-photo"></div>
+                </a>
+            </div>
+
+            <div class="wrapper-idea-submit">
+                <div class="container-idea-submit">
+                    <div class="container-textarea-post-idea">
+                        <div class="form-group container-placeholder">
+                            <textarea rows="1" class="form-input tx-post-idea prevent-input-emoji" placeholder="Satıcıya soru sor" name="reply" minlength="1" maxlength="280" required="" autocomplete="off" autocapitalize="on"></textarea>
+
+                            </div>
+                    </div>
+
+                    <div class="container-submit responsive-question-submit-container">
+                        <button class="btn-submit btn-post-question" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-idea-error-wrapper">
+            <div class="form-error form-invalid">Sorunuzu yazın</div>
+        </div>
+
+        </div>
+</form>
+</div></div>
+
+<div class="cqa-templates">
+<template class="cqa-publication-criteria" data-title="Yayınlanma Kriterleri">
+<div class="container"><div style="font-size:14px; color: #333"><span>•&nbsp;&nbsp;Satıcılarımıza sorduğunuz sorular ürün ile ilgili olmalıdır. Reklam içermemelidir. Satıcının, Diğer Hesap Sahipleri’nin ya da üçüncü şahısların kişisel haklarına saldırıda bulunulmamalıdır. Genel ahlak kurallarına aykırı, müstehcen, siyasi veya yasal olmayan içerik barındırmamalıdır. Satıcı, www.sahibinden.com dışında başka bir platformda satış yapması için yönlendirilmemelidir. Bu gibi durumlarda yaşanabilecek olası olumsuz durumlardan, Hesap Sahipleri veya üçüncü şahısların uğradığı zararlardan veya hesabın durdurulmasından ya da kapatılmasından sahibinden.com sorumlu değildir.</span><br><br><span>•&nbsp;&nbsp;Kriterleri sağlayan ve sahibinden.com tarafından uygun bulunan sorular, Satıcılara iletilir ve Satıcılar tarafından yanıtlanır. Kriterlere uygun bulunmayan soru ve cevaplar yayınlanmayacaktır.</span><br><br><span>•&nbsp;&nbsp;Soruların Satıcılar tarafından cevaplanmasına dair bir süre limiti bulunmamaktadır. Soruyu cevaplandırıp cevaplandırmamak Satıcının inisiyatifindedir. Satıcıların sorulara yanıt vermemesi halinde herhangi bir yaptırım uygulanmamaktadır.</span><br><br><span>•&nbsp;&nbsp;Sorunuzu, dilediğiniz anda silebilirsiniz. </span><br><br><span>•&nbsp;&nbsp;Satıcılar kendilerine gelen soruları herkesin görebileceği şekilde ya da sadece soruyu soran Alıcının görebileceği şekilde yanıtlayabilir ve yayınlayabilir.</span><br><br><span>•&nbsp;&nbsp;Satıcı sorunuzu yanıtladığında e-posta ile tarafınıza bilgilendirme yapılacaktır. Yanıtlara aynı zamanda Platformda yer alan “Bana Özel – Bilgilendirmeler” alanından ulaşılabilir.</span><br><br><span>•&nbsp;&nbsp;Soru, Satıcı tarafından herkesin görebileceği şekilde yanıtlanıp yayınlandıysa, Satıcı ilanında soru-cevap özelliğini kapatmadığı ve/veya ilanı yayından kaldırmadığı müddetçe soru-cevap görünür.</span><br><br><span>•&nbsp;&nbsp;Soru sadece soruyu soran kişiye özel yanıtlanarak yayınlandıysa, soru ve cevap ilan yayında olduğu müddetçe sadece soruyu soran Alıcı ve Satıcı tarafından görünebilir.</span><br><br><span>•&nbsp;&nbsp;Alıcı tarafından sorulan ilk soru sadece Alıcı tarafından görünür şekilde yanıtlanmış ise devamındaki yazışmalar daha sonra Satıcı tarafından herkese açık olacak şekilde değiştirilemez. Herkese açık şekilde yanıtlanan sorular ve devamındaki yazışmalar ise daha sonra sadece Alıcının görebileceği şekilde yanıtlanabilir.</span><br><br><span>•&nbsp;&nbsp;Satıcı sonradan dilediği zamanda cevabı silerek soruyu yayından kaldırabilir. Böyle bir durumda soru ve cevaba “Bana Özel – Bilgilendirmeler” alanından ulaşılamayacaktır.</span><br><br><span>•&nbsp;&nbsp;Soru sorarken Platformda yer alan “Bana Özel-Hesabım-Kişisel Bilgiler” alanına girdiğiniz Kullanıcı Adınız görünecektir. Burada ad soyad her ikisi de açık, ad tamamen açık soyadın baş harfi görünür ya da adın baş harfi görünür soyad tamamen açık vb. şekilde opsiyonlar bulunmaktadır.</span><br><br><span>•&nbsp;&nbsp;Rahatsız edici içerik barındıran, kriterlere uygun olmayan cevapları veya yasal olmayan ve kural dışı satış yapan Satıcılarımızı Platformda yer alan “Bana Özel – Sorun/Öneri Bildirimi” alanından sahibinden.com’a bildirebilirsiniz. Satıcı profili üzerinden veya ilgili cevap üzerinden de ‘Engelle’ ya da ‘Şikayet Et’ aksiyonlarını alabilirsiniz. Yapılan bildirime istinaden Satıcıya herhangi bir yaptırım uygulanıp uygulanmayacağı sahibinden.com’un inisiyatifindedir. </span><br><br><span>•&nbsp;&nbsp;Soru ve cevaplarda Alıcı ve Satıcıların iletişim bilgilerini paylaşması ve bu kapsamda sahibinden.com Platformu dışında alışveriş yapılmasından sahibinden.com sorumlu tutulamaz.</span><br><br></div></div>
+</template><template class="cqa-reply-question">
+<div>
+    <div class="container">
+        <div class="comment-wrapper">
+            <span class="name-surname">{ALICI_ADI}</span>
+            <div class="comment-text">{ALICI_MESAJI}</div>
+        </div>
+
+        <form novalidate="">
+            <div class="form-group form-input-container">
+                <input type="text" class="disable-autofocus" autofocus="" readonly="">
+                <textarea rows="1" class="form-input tx-post-idea prevent-input-emoji" placeholder="Yanıtınızı girin" name="reply" minlength="1" maxlength="280" required="" autocomplete="off" autocapitalize="on"></textarea>
+
+                <span class="form-error">Yanıtınızı girin</span>
+            </div>
+
+            <div class="container-reply-options">
+                <div class="label-container">
+                    <label class="orange-radio">
+                        <input type="radio" name="postViewChoice" value="ALL" checked="">
+                        <div class="checkmark"></div>
+                        <span>Herkes görebilsin</span>
+                    </label>
+
+                    <div class="informative-tooltip">
+                        <span class="informative-tooltip-question" data-choice-type="ALL"></span>
+                    </div>
+                </div>
+
+                <div class="label-container">
+                    <label class="orange-radio">
+                        <input type="radio" name="postViewChoice" value="JUST_USER">
+                        <div class="checkmark"></div>
+                        <span>Sadece <span class="askers-name">{ALICI_ADI}</span> görebilsin</span>
+                    </label>
+
+                    <div class="informative-tooltip">
+                        <span class="informative-tooltip-question" data-choice-type="JUST_USER"></span>
+                    </div>
+                </div>
+
+                <div class="container-publish-criteria">
+                    <button type="button" class="show-publication-criteria">Yayınlanma Kriterleri</button>
+                </div>
+            </div>
+
+            <div class="container-prepared-answer"></div>
+
+            <div class="content-buttons">
+                <button data-dialog-closer="" type="reset" class="dialog-closer" hidden="">
+                </button><button data-dialog-closer="" type="reset" class="no secondary">Vazgeç</button>
+                <button type="button" class="yes" name="send">Gönder</button>
+            </div>
+        </form>
+    </div>
+</div>
+</template><template class="cqa-delete-question">
+<div class="container">
+    <span class="cqa-dialog-content">Sorunuz silinecektir, onaylıyor musunuz?</span>
+    <div class="content-buttons">
+        <button data-dialog-closer="" type="reset" class="no secondary">Vazgeç</button>
+        <button data-dialog-closer="" type="button" class="yes">Evet</button>
+    </div>
+</div>
+</template><template class="cqa-delete-answer">
+<div class="container">
+    <span class="cqa-dialog-content">Cevabınız silinecektir, onaylıyor musunuz?</span>
+    <div class="content-buttons">
+        <button data-dialog-closer="" type="reset" class="no secondary">Vazgeç</button>
+        <button data-dialog-closer="" type="button" class="yes">Evet</button>
+    </div>
+</div>
+</template><template class="cqa-block-user">
+<div class="cqa-block-user-container">
+    <form method="post" onsubmit="return false">
+        <div class="label-container">
+            <label class="orange-radio">
+                <input type="radio" name="reason" value="ADVERTISING" class="form-input" required="">
+                <div class="checkmark"></div>
+                <span>Reklam Mesajı</span>
+            </label>
+
+            <label class="orange-radio">
+                <input type="radio" name="reason" value="DIRECTING_OTHER_SITES" class="form-input">
+                <div class="checkmark"></div>
+                <span>Gereksiz/İlgisiz Mesaj</span>
+            </label>
+
+            <label class="orange-radio">
+                <input type="radio" name="reason" value="OFFENSIVE_MESSAGE" class="form-input">
+                <div class="checkmark"></div>
+                <span>Hakaret/Uygunsuz Mesaj</span>
+            </label>
+
+            <label class="orange-radio">
+                <input type="radio" name="reason" value="FRAUD" class="form-input">
+                <div class="checkmark"></div>
+                <span>Şüpheli/Kötü Niyetli Kullanıcı</span>
+            </label>
+        </div>
+
+        <span class="form-error form-invalid">Engelleme nedeninizi seçiniz</span>
+
+        <div class="content-buttons">
+            <button data-dialog-closer="" type="reset" class="dialog-closer" hidden="">
+            </button><button data-dialog-closer="" type="reset" class="no secondary">Vazgeç</button>
+            <button type="button" class="yes">Engelle</button>
+        </div>
+    </form>
+</div>
+</template><template class="cqa-all-questions-template">
+<section class="classified-question-answer cqa-all-questions" data-platform="RESPONSIVE" data-flags="ANSWER_THREAD_ENABLED" data-classified-id="1224610216">
+
+    <div class="container-cqa">
+        <div class="cqa-list" data-nosnippet=""></div>
+
+        <div class="container-post-question">
+<div class="new-info-container">
+        <div class="info-privacy">
+            <span class="sui-color-emphasis-low">Ürün ile ilgili merak ettiklerinizi sorabilirsiniz.</span>
+        </div>
+    </div>
+<form class="form-post-question" method="post" novalidate="" onsubmit="return false;">
+    <div class="container-post-idea">
+        <div class="container-info-privacy">
+            <div class="info-privacy">
+                <span>Soru ve cevapları herkes görür.</span>
+            </div>
+
+            <div class="container-publish-criteria">
+                <button type="button" class="show-publication-criteria">Yayınlanma Kriterleri</button>
+            </div>
+        </div>
+
+        <div class="post-idea">
+            <div class="container-post-profile-image">
+                <a class="comment-profile-image-wrapper" href="javascript:void(0)" target="_self">
+                    <div class="comment-profile-image no-photo"></div>
+                </a>
+            </div>
+
+            <div class="wrapper-idea-submit">
+                <div class="container-idea-submit">
+                    <div class="container-textarea-post-idea">
+                        <div class="form-group container-placeholder">
+                            <textarea rows="1" class="form-input tx-post-idea prevent-input-emoji" placeholder="Satıcıya soru sor" name="reply" minlength="1" maxlength="280" required="" autocomplete="off" autocapitalize="on"></textarea>
+
+                            </div>
+                    </div>
+
+                    <div class="container-submit responsive-question-submit-container">
+                        <button class="btn-submit btn-post-question" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-idea-error-wrapper">
+            <div class="form-error form-invalid">Sorunuzu yazın</div>
+        </div>
+
+        </div>
+</form>
+</div></div>
+</section>
+</template><template class="cqa-thread-item">
+<div class="thread-item">
+    <div class="wrapper-thread-item">
+        <div class="wrapper-comment-item">
+            <div class="question-info-box container-informative-box level-info thread-status-info">
+                <span class="status-description"></span>
+            </div>
+
+            <form class="form-post-answer hide-on-responsive" method="post" novalidate="">
+<div class="container-post-idea">
+    <div class="post-idea">
+        <div class="container-post-profile-image hide-on-web">
+                <a class="comment-profile-image-wrapper" href="javascript:void(0)" target="_self">
+                    <div class="comment-profile-image no-photo"></div>
+                </a>
+            </div>
+        <div class="wrapper-idea-submit">
+            <div class="container-idea-submit">
+                <div class="container-textarea-post-idea">
+                            <div class="form-group container-placeholder">
+                                <textarea rows="1" class="form-input tx-post-idea prevent-input-emoji" placeholder="&nbsp;" name="reply" minlength="1" maxlength="280" required="" autocomplete="off" autocapitalize="on"></textarea>
+
+                                <div class="placeholder">
+                                        <span class="askers-name"></span>
+                                        <span class="as"></span>
+                                    </div>
+                                </div>
+                        </div>
+                    <div class="container-submit ">
+                    <button class="btn-submit btn-post-answer" type="button" name="send">Gönder</button>
+                </div>
+            </div>
+
+            <span class="form-error form-invalid">Yanıtınızı yazın</span>
+        </div>
+    </div>
+</div>
+</form></div>
+
+        <div class="container-informative-box level-default comment-private-view">
+            <span class="for-responder">Soru ve cevabı sadece <span class="user-pretty-name">{KULLANICI_ADI}</span> görüyor.</span>
+            <span class="for-questioner">Sadece sizin görebileceğiniz şekilde cevaplandı.</span>
+        </div>
+    </div>
+</div>
+</template>
+
+<template class="cqa-comment-item">
+<div class="container-comment-item">
+    <div class="comment-item">
+        <div class="container-profile-image">
+            <div class="hint-tooltip profile-hint" hidden="">
+<div class="hint-tooltip-container">
+    <span class="hide-on-responsive">Profil fotoğrafınızı ve görünen adınızı profilinizden değiştirebilirsiniz.</span>
+    <span class="hide-on-web">Görünen adınızı profilinizden değiştirebilirsiniz.</span>
+
+    <label class="hint-close-container">
+        <input hidden="" type="checkbox" class="hint-tooltip-close" onchange="this.closest('.hint-tooltip').classList.toggle('hint-tooltip-closed')">
+        <span>╳</span>
+    </label>
+</div>
+</div><a class="comment-profile-wrapper" href="javascript:void(0)" target="_self">
+                <div class="comment-profile-image"></div>
+            </a>
+        </div>
+
+        <div class="container-comment">
+            <div class="comment-wrapper">
+                <a class="name-surname" href="javascript:void(0)" target="_self"></a>
+                <span class="comment-text"></span>
+            </div>
+
+            <div class="answer-thread-comment-wrapper">
+                <div class="comment-date"></div>
+                <div class="answer-thread-reply-button"></div>
+            </div>
+        </div>
+
+        <div class="container-thread-actions" data-operation-abilities="">
+<div class="wrapper-thread-actions">
+    <div class="answer-thread-eye-icon-wrapper ">
+        <div class="answer-thread-eye-icon" data-eye-icon-text=""></div>
+    </div>
+
+    <div class="container-comment-operations">
+        <a class="popup-operations">
+            <span class="popup-closer"></span>
+            <span class="hide-on-responsive">İşlemler&nbsp;&nbsp;▾</span>
+            <span class="hide-on-web three-dots"></span>
+
+            <form class="wrapper-popup-operations" onsubmit="return false" novalidate="">
+                <input type="hidden" name="questionId" value="">
+                <input type="hidden" name="answerId" value="">
+                <input type="hidden" name="sellerId" value="">
+                <input type="hidden" name="buyerId" value="">
+                <input type="hidden" name="isPreparedQuestion" value="">
+
+                <div class="container-popup-operations">
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="DELETE_QUESTION">Soruyu sil</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="COMPLAINT_ANSWER">Cevabı Şikayet Et</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="BLOCK_SELLER">Satıcıyı engelle</button>
+                    <button type="button" class="popup-operation for-questioner" name="operation" value="UNBLOCK_SELLER">Engeli kaldır</button>
+
+                    <button type="button" class="popup-operation for-responder hide-on-web hidden disable" name="operation" value="REPLY_QUESTION">Yanıtla</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="DELETE_ANSWER">Cevabı sil</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="COMPLAINT_BUYER">Soruyu şikayet et</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="BLOCK_BUYER">Hesap sahibini engelle</button>
+                    <button type="button" class="popup-operation for-responder" name="operation" value="UNBLOCK_BUYER">Engeli kaldır</button>
+                </div>
+            </form>
+        </a>
+    </div>
+</div>
+</div></div>
+    <div class="list-answer-item-info-box disable hidden container-informative-box level-info thread-status-info">
+        <span class="status-description"></span>
+    </div>
+</div>
+</template><template class="cqa-prepared-question">
+<div class="container">
+    <div class="content-body">
+        <a class="profile-wrapper" href="javascript:void(0)" target="_self">
+            <div class="profile no-photo"></div>
+        </a>
+        <div class="text"></div>
+    </div>
+    <div class="content-footer">
+        <span></span>
+        <div class="content-buttons form-post-question">
+            <button data-dialog-closer="" type="reset" class="no secondary">Vazgeç</button>
+            <button data-dialog-closer="" type="button" class="yes btn-post-question" data-type="">Gönder</button>
+        </div>
+    </div>
+</div>
+</template><template class="cqa-complaint">
+<div class="cqa-complaint-container">
+    <form method="post" onsubmit="return false">
+        <div class="label-container">
+            <label class="orange-radio">
+                <input type="radio" name="reason" value="ADVERTISEMENT" class="form-input">
+                <div class="checkmark"></div>
+                <span>Gereksiz/İlgisiz Mesaj</span>
+            </label>
+
+            <label class="orange-radio">
+                <input type="radio" name="reason" value="SPAM_MESSAGE" class="form-input" required="">
+                <div class="checkmark"></div>
+                <span>Reklam Mesajı</span>
+            </label>
+
+            <label class="orange-radio">
+                <input type="radio" name="reason" value="INSULT" class="form-input">
+                <div class="checkmark"></div>
+                <span>Hakaret/Uygunsuz Mesaj</span>
+            </label>
+
+            <label class="orange-radio">
+                <input type="radio" name="reason" value="FRAUD" class="form-input">
+                <div class="checkmark"></div>
+                <span>Şüpheli/Kötü Niyetli Kullanıcı</span>
+            </label>
+        </div>
+
+        <span class="form-error form-invalid">Şikayet etme nedeninizi seçiniz</span>
+
+        <div class="content-buttons">
+            <button data-dialog-closer="" type="reset" class="dialog-closer" hidden="">
+            </button><button data-dialog-closer="" type="reset" class="no secondary">Vazgeç</button>
+            <button type="button" class="yes">Şikayet Et</button>
+        </div>
+    </form>
+</div>
+</template><template class="cqa-security-tips" data-title="Güvenlik İpuçları" data-period="604800000">
+<div class="container">
+    <div class="cqa-dialog-wrapper">
+        <div class="content-icon"></div>
+        <div class="content-body">
+            <p style="margin-top:0; font-size:14px; font-weight:400; line-height:18px; color:#333333;">WhatsApp vb. uygulamalar veya e-posta, SMS ile iletilen ve <a style="color: #1064BC;" href="https://www.sahibinden.com/param-guvende/bireysel" rel="noopener noreferer" target="_blank"><span class="spg-text" style="display: inline-block;">S-Param Güvende</span></a><b style="font-weight:700;">’yi taklit eden şüpheli linklere</b> tıklayıp bir ödeme yapmayın.</p><p style="font-size:14px; font-weight:400; line-height:18px; color:#333333;">S-Param Güvende'li alışverişlerde ödemeler <b>kredi kartı</b> ile yapılır ve hiçbir koşulda bir <b>IBAN hesabına para göndermeniz istenmez</b>.</p><p style="font-size:14px; font-weight:400; line-height:18px; color:#333333;">İşlemleriniz için lütfen sadece sahibinden.com uygulaması ve web sitesini kullanın.<a style="color: #1064BC;" href="https://yardim.sahibinden.com/hc/tr/articles/8402707984924-G%C3%BCvenlik-%C4%B0pu%C3%A7lar%C4%B1" rel="noopener noreferer" target="_blank"> Detaylı bilgi</a></p></div>
+    </div>
+    <div class="content-buttons">
+        <button data-dialog-closer="" type="button" class="yes">Okudum, anladım</button>
+    </div>
+</div>
+</template><template class="cqa-share-personal-information">
+<div class="container">
+    <span class="cqa-dialog-content"></span>
+    <div class="content-buttons">
+        <button data-dialog-closer="" type="reset" class="no secondary">Vazgeç</button>
+        <button data-dialog-closer="" type="button" class="yes">Yine de paylaş</button>
+    </div>
+</div>
+</template></div></div>
+    </div>
+</section>
+</div>
+<h3 class="similar-classifieds-header">Benzer İlanlar</h3>
+<div class="similar-classifieds">
+<div class="similar-classifieds-container">
+    <div id="similarClassifieds" class="owl-carousel owl-theme owl-loaded owl-drag">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1640px;"><div class="owl-item active" style="width: 164px;"><div class="similar-classified-container">
+                <a href="https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-sahibinden-sifir-elektro-gitar-1197849818/detay">
+                    <p>
+                        <img class="similar-classified-image" src="https://i0.shbdn.com/photos/84/98/18/w480_1197849818aat.jpg" title="SAHİBİNDEN SIFIR ELEKTRO GİTAR" alt="SAHİBİNDEN SIFIR ELEKTRO GİTAR">
+                    </p>
+                    <div class="similar-classified-title-container">
+                        <p class="similar-classified-title">SAHİBİNDEN SIFIR ELEKTRO GİTAR</p>
+                    </div>
+                    <p class="similar-classified-price">11.000 TL</p>
+                </a>
+            </div></div><div class="owl-item active" style="width: 164px;"><div class="similar-classified-container">
+                <a href="https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-epiphone-gold-top-classic-1178094079/detay">
+                    <p>
+                        <img class="similar-classified-image" src="https://i0.shbdn.com/photos/09/40/79/w480_1178094079tr9.jpg" title="Epiphone gold top classic" alt="Epiphone gold top classic">
+                    </p>
+                    <div class="similar-classified-title-container">
+                        <p class="similar-classified-title">Epiphone gold top classic</p>
+                    </div>
+                    <p class="similar-classified-price">26.000 TL</p>
+                </a>
+            </div></div><div class="owl-item active" style="width: 164px;"><div class="similar-classified-container">
+                <a href="https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-ibanez-sa120-1205897374/detay">
+                    <p>
+                        <img class="similar-classified-image" src="https://i0.shbdn.com/photos/89/73/74/w480_1205897374pl1.jpg" title="Ibanez SA120" alt="Ibanez SA120">
+                    </p>
+                    <div class="similar-classified-title-container">
+                        <p class="similar-classified-title">Ibanez SA120</p>
+                    </div>
+                    <p class="similar-classified-price">10.500 TL</p>
+                </a>
+            </div></div><div class="owl-item active" style="width: 164px;"><div class="similar-classified-container">
+                <a href="https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-custom-superstrat-ibanez-elektro-gitar-1166124662/detay">
+                    <p>
+                        <img class="similar-classified-image" src="https://i0.shbdn.com/photos/12/46/62/w480_11661246620x0.jpg" title="Custom Superstrat Ibanez Elektro Gitar" alt="Custom Superstrat Ibanez Elektro Gitar">
+                    </p>
+                    <div class="similar-classified-title-container">
+                        <p class="similar-classified-title">Custom Superstrat Ibanez Elektro Gitar</p>
+                    </div>
+                    <p class="similar-classified-price">9.999 TL</p>
+                </a>
+            </div></div><div class="owl-item active" style="width: 164px;"><div class="similar-classified-container">
+                <a href="https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-kemp-elektro-gitar-1208779846/detay">
+                    <p>
+                        <img class="similar-classified-image" src="https://i0.shbdn.com/photos/77/98/46/w480_1208779846b9k.jpg" title="kemp elektro gitar" alt="kemp elektro gitar">
+                    </p>
+                    <div class="similar-classified-title-container">
+                        <p class="similar-classified-title">kemp elektro gitar</p>
+                    </div>
+                    <p class="similar-classified-price">6.700 TL</p>
+                </a>
+            </div></div><div class="owl-item active" style="width: 164px;"><div class="similar-classified-container">
+                <a href="https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-lea-elektro-gitar-prestige-model-1202177505/detay">
+                    <p>
+                        <img class="similar-classified-image" src="https://i0.shbdn.com/photos/17/75/05/w480_1202177505e8y.jpg" title="LEA ELEKTRO GİTAR PRESTİGE MODEL" alt="LEA ELEKTRO GİTAR PRESTİGE MODEL">
+                    </p>
+                    <div class="similar-classified-title-container">
+                        <p class="similar-classified-title">LEA ELEKTRO GİTAR PRESTİGE MODEL</p>
+                    </div>
+                    <p class="similar-classified-price">6.000 TL</p>
+                </a>
+            </div></div><div class="owl-item" style="width: 164px;"><div class="similar-classified-container">
+                <a href="https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-iyi-drumda-satilik-yamaha-pasifica-121v-1181930228/detay">
+                    <p>
+                        <img class="similar-classified-image" src="https://i0.shbdn.com/photos/93/02/28/w480_1181930228zy8.jpg" title="iyi drumda satılık yamaha pasifica 121v" alt="iyi drumda satılık yamaha pasifica 121v">
+                    </p>
+                    <div class="similar-classified-title-container">
+                        <p class="similar-classified-title">iyi drumda satılık yamaha pasifica 121v</p>
+                    </div>
+                    <p class="similar-classified-price">14.000 TL</p>
+                </a>
+            </div></div><div class="owl-item" style="width: 164px;"><div class="similar-classified-container">
+                <a href="https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-meksika-fender-telecaster-1223626434/detay">
+                    <p>
+                        <img class="similar-classified-image" src="https://i0.shbdn.com/photos/62/64/34/w480_1223626434jbc.jpg" title="Meksika Fender Telecaster" alt="Meksika Fender Telecaster">
+                    </p>
+                    <div class="similar-classified-title-container">
+                        <p class="similar-classified-title">Meksika Fender Telecaster</p>
+                    </div>
+                    <p class="similar-classified-price">32.000 TL</p>
+                </a>
+            </div></div><div class="owl-item" style="width: 164px;"><div class="similar-classified-container">
+                <a href="https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-sx-custom-handmade-vtg-series-ve-nux-might8bt-amfi-1178742437/detay">
+                    <p>
+                        <img class="similar-classified-image" src="https://i0.shbdn.com/photos/74/24/37/w480_1178742437wlg.jpg" title="SX Custom Handmade VTG Series ve NUX MİGHT8BT AMFİ" alt="SX Custom Handmade VTG Series ve NUX MİGHT8BT AMFİ">
+                    </p>
+                    <div class="similar-classified-title-container">
+                        <p class="similar-classified-title">SX Custom Handmade VTG Series ve NUX MİGHT8BT AMFİ</p>
+                    </div>
+                    <p class="similar-classified-price">11.000 TL</p>
+                </a>
+            </div></div><div class="owl-item" style="width: 164px;"><div class="similar-classified-container">
+                <a href="https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-temiz-elektro-gitar-orjinal-cbr100-1194989560/detay">
+                    <p>
+                        <img class="similar-classified-image" src="https://i0.shbdn.com/photos/98/95/60/w480_11949895601jl.jpg" title="temiz elektro gitar orjinal cbr100" alt="temiz elektro gitar orjinal cbr100">
+                    </p>
+                    <div class="similar-classified-title-container">
+                        <p class="similar-classified-title">temiz elektro gitar orjinal cbr100</p>
+                    </div>
+                    <p class="similar-classified-price">6.500 TL</p>
+                </a>
+            </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+</div>
+
+<div class="more-similar-classifieds-area">
+    <h3 class="similar-classifieds-header">Keşfedebileceğiniz Diğer İlanlar</h3>
+    <div class="more-similar-classifieds-container">
+            <a class="more-similar-classifieds-item" href="https://www.sahibinden.com/marka/fujigen"> Daha Fazla FujiGen</a>
+            <a class="more-similar-classifieds-item" href="https://www.sahibinden.com/elektro-gitar"> Daha Fazla Elektro</a>
+            <a class="more-similar-classifieds-item" href="https://www.sahibinden.com/marka/fujigen/elektro-gitar"> Daha Fazla FujiGen Elektro</a>
+            </div>
+</div>
+<div class="uiBox uiBoxContainer yourSecurity">
+<h4>sahibinden.com, tüm kullanıcılar için tam bir alışveriş güvenliği sağlamayı amaç edinmiştir.</h4>
+
+<p>
+    Siz de kendi güvenliğiniz ve diğer kullanıcıların daha sağlıklı alışveriş yapabilmeleri için, satın almak istediğiniz ürünü teslim almadan ön ödeme yapmamaya, avans ya da kapora ödememeye özen gösteriniz. İlan sahiplerinin ilanlarda belirttiği herhangi bir bilgi ya da görselin gerçeği yansıtmadığını düşünüyorsanız veya ilan sahiplerinin hesap profillerindeki bilgilerin doğru olmadığını düşünüyorsanız, lütfen <a href="/destek" rel="nofollow" class="trackLinkClick trackId_ilan_uyari_haber_ver">bize haber veriniz.</a></p>
+</div>
+<div class="counterNumbers">
+<input id="counter_classifiedId" type="hidden" value="1224610216">
+<input id="counter_projectId" type="hidden" value="">
+<div class="counterBody" style="display: none;">
+    <p>
+        <span id="counterBody">
+            <span class="number1">1</span>
+        </span>
+        <span id="totalView">
+            kişi tarafından görüntülenmiştir</span>
+    </p>
+</div>
+</div></div>
+<div id="classified-location" class="mini-tab-content" style="display: none;">
+        <style type="text/css">
+#gmap {
+    width: 100%;
+    height: 480px;
+}
+</style>
+<div class="mapDetailsContainer">
+<div class="streetViewButton"><a class="noprevent" href="http://maps.google.com/maps?q=&amp;layer=c&amp;cbll=40.7636845,29.9716002&amp;cbp=11,0,0,0,0" target="_blank"></a></div>
+<div class="zoomButtonContainer">
+    <ul class="map-buttons zoom">
+        <li><a href="#zoomIn" class="in"></a></li>
+        <span class="zoom-divider"></span>
+        <li><a href="#zoomOut" class="out"></a></li>
+    </ul>
+</div>
+<ul class="map-buttons type-noStreetView">
+    <li><a href="#harita" class="map active">Harita</a></li>
+    <div class="map-satellite-divider"></div>
+    <li><a href="#uydu" class="satellite">Uydu</a></li>
+</ul>
+<div class="mapTooltipInfo disable" id="mapTooltipInfo"></div>
+<div class="mapTooltipInfoDetails disable" id="mapTooltipInfoDetails"></div>
+
+<div class="street-view-button-tooltip">
+    <span class="tooltip-text">Sokak Görünümü</span>
+</div>
+
+<div id="gmap" data-lat="40.7636845" data-lon="29.9716002" data-lang="tr" data-corrupt="true"></div>
+<div id="markerContainer"></div>
+</div>
+</div>
+<div class="ref-cqa-tab-location"></div>
+
+<!-- emlak endeksi -->
+<script type="text/javascript"></script>
+<div class="uiBox categorieHelpers">
+    <div class="uiBoxTitle">
+        <h3>Sponsorlu Bağlantı</h3>
+    </div>
+    <div class="uiBoxContainer">
+        <table width="100%">
+            <tbody>
+            <tr>
+                <td align="center">
+                    <div id="div-gpt-ad-1585295062503-0"></div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div></div>
+    </div>

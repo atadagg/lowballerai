@@ -1,0 +1,285 @@
+2025-01-23 21:08:10,658 - INFO - Remaining URLs to process: 1020
+2025-01-23 21:08:17,858 - INFO - Remaining URLs to process: 1020
+2025-01-23 21:08:19,801 - ERROR - Main execution error: maximum recursion depth exceeded
+2025-01-23 21:10:01,022 - INFO - Remaining URLs to process: 919
+2025-01-23 21:10:04,239 - INFO - patching driver executable /Users/atatandagidir/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2025-01-23 21:10:14,952 - INFO - Processing 1/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-esp-ltd-ec-256-snow-white-1224570820/detay
+2025-01-23 21:10:35,240 - ERROR - Error parsing listing https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-esp-ltd-ec-256-snow-white-1224570820/detay: Message: 
+Stacktrace:
+0   undetected_chromedriver             0x00000001011b1e08 undetected_chromedriver + 5025288
+1   undetected_chromedriver             0x00000001011a8c23 undetected_chromedriver + 4987939
+2   undetected_chromedriver             0x0000000100d4ae67 undetected_chromedriver + 409191
+3   undetected_chromedriver             0x0000000100d9a1b9 undetected_chromedriver + 733625
+4   undetected_chromedriver             0x0000000100d9a371 undetected_chromedriver + 734065
+5   undetected_chromedriver             0x0000000100de0194 undetected_chromedriver + 1020308
+6   undetected_chromedriver             0x0000000100dc150d undetected_chromedriver + 894221
+7   undetected_chromedriver             0x0000000100ddd571 undetected_chromedriver + 1009009
+8   undetected_chromedriver             0x0000000100dc12b3 undetected_chromedriver + 893619
+9   undetected_chromedriver             0x0000000100d8beb9 undetected_chromedriver + 675513
+10  undetected_chromedriver             0x0000000100d8d0ee undetected_chromedriver + 680174
+11  undetected_chromedriver             0x0000000101173819 undetected_chromedriver + 4769817
+12  undetected_chromedriver             0x0000000101178893 undetected_chromedriver + 4790419
+13  undetected_chromedriver             0x000000010117f66e undetected_chromedriver + 4818542
+14  undetected_chromedriver             0x00000001011795bd undetected_chromedriver + 4793789
+15  undetected_chromedriver             0x000000010114b98c undetected_chromedriver + 4606348
+16  undetected_chromedriver             0x0000000101197b78 undetected_chromedriver + 4918136
+17  undetected_chromedriver             0x0000000101197d30 undetected_chromedriver + 4918576
+18  undetected_chromedriver             0x00000001011a885e undetected_chromedriver + 4986974
+19  libsystem_pthread.dylib             0x00007ff80c3671d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80c362bd3 thread_start + 15
+
+2025-01-23 21:10:37,503 - INFO - Processing 2/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-squier-bullet-stratocaster-1224568118/detay
+2025-01-23 21:10:56,131 - ERROR - Error parsing listing https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-squier-bullet-stratocaster-1224568118/detay: Message: 
+Stacktrace:
+0   undetected_chromedriver             0x00000001011b1e08 undetected_chromedriver + 5025288
+1   undetected_chromedriver             0x00000001011a8c23 undetected_chromedriver + 4987939
+2   undetected_chromedriver             0x0000000100d4ae67 undetected_chromedriver + 409191
+3   undetected_chromedriver             0x0000000100d9a1b9 undetected_chromedriver + 733625
+4   undetected_chromedriver             0x0000000100d9a371 undetected_chromedriver + 734065
+5   undetected_chromedriver             0x0000000100de0194 undetected_chromedriver + 1020308
+6   undetected_chromedriver             0x0000000100dc150d undetected_chromedriver + 894221
+7   undetected_chromedriver             0x0000000100ddd571 undetected_chromedriver + 1009009
+8   undetected_chromedriver             0x0000000100dc12b3 undetected_chromedriver + 893619
+9   undetected_chromedriver             0x0000000100d8beb9 undetected_chromedriver + 675513
+10  undetected_chromedriver             0x0000000100d8d0ee undetected_chromedriver + 680174
+11  undetected_chromedriver             0x0000000101173819 undetected_chromedriver + 4769817
+12  undetected_chromedriver             0x0000000101178893 undetected_chromedriver + 4790419
+13  undetected_chromedriver             0x000000010117f66e undetected_chromedriver + 4818542
+14  undetected_chromedriver             0x00000001011795bd undetected_chromedriver + 4793789
+15  undetected_chromedriver             0x000000010114b98c undetected_chromedriver + 4606348
+16  undetected_chromedriver             0x0000000101197b78 undetected_chromedriver + 4918136
+17  undetected_chromedriver             0x0000000101197d30 undetected_chromedriver + 4918576
+18  undetected_chromedriver             0x00000001011a885e undetected_chromedriver + 4986974
+19  libsystem_pthread.dylib             0x00007ff80c3671d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80c362bd3 thread_start + 15
+
+2025-01-23 21:10:58,808 - INFO - Processing 3/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-epiphone-les-paul-standart-1224788855/detay
+2025-01-23 21:11:18,201 - ERROR - Error parsing listing https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-epiphone-les-paul-standart-1224788855/detay: Message: 
+Stacktrace:
+0   undetected_chromedriver             0x00000001011b1e08 undetected_chromedriver + 5025288
+1   undetected_chromedriver             0x00000001011a8c23 undetected_chromedriver + 4987939
+2   undetected_chromedriver             0x0000000100d4ae67 undetected_chromedriver + 409191
+3   undetected_chromedriver             0x0000000100d9a1b9 undetected_chromedriver + 733625
+4   undetected_chromedriver             0x0000000100d9a371 undetected_chromedriver + 734065
+5   undetected_chromedriver             0x0000000100de0194 undetected_chromedriver + 1020308
+6   undetected_chromedriver             0x0000000100dc150d undetected_chromedriver + 894221
+7   undetected_chromedriver             0x0000000100ddd571 undetected_chromedriver + 1009009
+8   undetected_chromedriver             0x0000000100dc12b3 undetected_chromedriver + 893619
+9   undetected_chromedriver             0x0000000100d8beb9 undetected_chromedriver + 675513
+10  undetected_chromedriver             0x0000000100d8d0ee undetected_chromedriver + 680174
+11  undetected_chromedriver             0x0000000101173819 undetected_chromedriver + 4769817
+12  undetected_chromedriver             0x0000000101178893 undetected_chromedriver + 4790419
+13  undetected_chromedriver             0x000000010117f66e undetected_chromedriver + 4818542
+14  undetected_chromedriver             0x00000001011795bd undetected_chromedriver + 4793789
+15  undetected_chromedriver             0x000000010114b98c undetected_chromedriver + 4606348
+16  undetected_chromedriver             0x0000000101197b78 undetected_chromedriver + 4918136
+17  undetected_chromedriver             0x0000000101197d30 undetected_chromedriver + 4918576
+18  undetected_chromedriver             0x00000001011a885e undetected_chromedriver + 4986974
+19  libsystem_pthread.dylib             0x00007ff80c3671d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80c362bd3 thread_start + 15
+
+2025-01-23 21:11:21,342 - INFO - Processing 4/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-cort-x6-special-plus-roland-edirol-ua-25-24-bit-harici-ses-karti-1224788147/detay
+2025-01-23 21:11:40,284 - ERROR - Error parsing listing https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-cort-x6-special-plus-roland-edirol-ua-25-24-bit-harici-ses-karti-1224788147/detay: Message: 
+Stacktrace:
+0   undetected_chromedriver             0x00000001011b1e08 undetected_chromedriver + 5025288
+1   undetected_chromedriver             0x00000001011a8c23 undetected_chromedriver + 4987939
+2   undetected_chromedriver             0x0000000100d4ae67 undetected_chromedriver + 409191
+3   undetected_chromedriver             0x0000000100d9a1b9 undetected_chromedriver + 733625
+4   undetected_chromedriver             0x0000000100d9a371 undetected_chromedriver + 734065
+5   undetected_chromedriver             0x0000000100de0194 undetected_chromedriver + 1020308
+6   undetected_chromedriver             0x0000000100dc150d undetected_chromedriver + 894221
+7   undetected_chromedriver             0x0000000100ddd571 undetected_chromedriver + 1009009
+8   undetected_chromedriver             0x0000000100dc12b3 undetected_chromedriver + 893619
+9   undetected_chromedriver             0x0000000100d8beb9 undetected_chromedriver + 675513
+10  undetected_chromedriver             0x0000000100d8d0ee undetected_chromedriver + 680174
+11  undetected_chromedriver             0x0000000101173819 undetected_chromedriver + 4769817
+12  undetected_chromedriver             0x0000000101178893 undetected_chromedriver + 4790419
+13  undetected_chromedriver             0x000000010117f66e undetected_chromedriver + 4818542
+14  undetected_chromedriver             0x00000001011795bd undetected_chromedriver + 4793789
+15  undetected_chromedriver             0x000000010114b98c undetected_chromedriver + 4606348
+16  undetected_chromedriver             0x0000000101197b78 undetected_chromedriver + 4918136
+17  undetected_chromedriver             0x0000000101197d30 undetected_chromedriver + 4918576
+18  undetected_chromedriver             0x00000001011a885e undetected_chromedriver + 4986974
+19  libsystem_pthread.dylib             0x00007ff80c3671d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80c362bd3 thread_start + 15
+
+2025-01-23 21:11:43,335 - INFO - Processing 5/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-esp-ltd-te-254-1224787853/detay
+2025-01-23 21:12:01,643 - ERROR - Error parsing listing https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-esp-ltd-te-254-1224787853/detay: Message: 
+Stacktrace:
+0   undetected_chromedriver             0x00000001011b1e08 undetected_chromedriver + 5025288
+1   undetected_chromedriver             0x00000001011a8c23 undetected_chromedriver + 4987939
+2   undetected_chromedriver             0x0000000100d4ae67 undetected_chromedriver + 409191
+3   undetected_chromedriver             0x0000000100d9a1b9 undetected_chromedriver + 733625
+4   undetected_chromedriver             0x0000000100d9a371 undetected_chromedriver + 734065
+5   undetected_chromedriver             0x0000000100de0194 undetected_chromedriver + 1020308
+6   undetected_chromedriver             0x0000000100dc150d undetected_chromedriver + 894221
+7   undetected_chromedriver             0x0000000100ddd571 undetected_chromedriver + 1009009
+8   undetected_chromedriver             0x0000000100dc12b3 undetected_chromedriver + 893619
+9   undetected_chromedriver             0x0000000100d8beb9 undetected_chromedriver + 675513
+10  undetected_chromedriver             0x0000000100d8d0ee undetected_chromedriver + 680174
+11  undetected_chromedriver             0x0000000101173819 undetected_chromedriver + 4769817
+12  undetected_chromedriver             0x0000000101178893 undetected_chromedriver + 4790419
+13  undetected_chromedriver             0x000000010117f66e undetected_chromedriver + 4818542
+14  undetected_chromedriver             0x00000001011795bd undetected_chromedriver + 4793789
+15  undetected_chromedriver             0x000000010114b98c undetected_chromedriver + 4606348
+16  undetected_chromedriver             0x0000000101197b78 undetected_chromedriver + 4918136
+17  undetected_chromedriver             0x0000000101197d30 undetected_chromedriver + 4918576
+18  undetected_chromedriver             0x00000001011a885e undetected_chromedriver + 4986974
+19  libsystem_pthread.dylib             0x00007ff80c3671d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80c362bd3 thread_start + 15
+
+2025-01-23 21:12:05,193 - INFO - Processing 6/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-ibanez-grg121dx-mat-siyah-1224563309/detay
+2025-01-24 17:04:17,516 - INFO - Remaining URLs to process: 919
+2025-01-24 17:04:19,339 - INFO - patching driver executable /Users/atatandagidir/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2025-01-24 17:04:26,166 - INFO - Processing 1/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-esp-ltd-ec-256-snow-white-1224570820/detay
+2025-01-24 17:04:30,151 - INFO - Saved: ESP LTD EC-256 Snow White
+2025-01-24 17:04:34,535 - INFO - Processing 2/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-squier-bullet-stratocaster-1224568118/detay
+2025-01-24 17:04:38,998 - INFO - Saved: Squier Bullet Stratocaster
+2025-01-24 17:04:42,076 - INFO - Processing 3/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-epiphone-les-paul-standart-1224788855/detay
+2025-01-24 17:04:45,642 - INFO - Saved: Epiphone Les Paul Standart
+2025-01-24 17:04:47,821 - INFO - Processing 4/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-cort-x6-special-plus-roland-edirol-ua-25-24-bit-harici-ses-karti-1224788147/detay
+2025-01-24 17:04:51,587 - INFO - Saved: CORT X6 SPECIAL + ROLAND EDIROL UA-25 24 Bit Harici Ses Kartı
+2025-01-24 17:04:54,701 - INFO - Processing 5/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-esp-ltd-te-254-1224787853/detay
+2025-01-24 17:04:59,173 - INFO - Saved: ESP LTD TE-254
+2025-01-24 17:05:03,283 - INFO - Processing 6/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-ibanez-grg121dx-mat-siyah-1224563309/detay
+2025-01-24 17:05:07,394 - INFO - Saved: İbanez GRG121DX mat siyah
+2025-01-24 17:05:10,528 - INFO - Processing 7/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-ibanez-grx40-elektro-gitar-1224561738/detay
+2025-01-24 17:05:14,831 - INFO - Saved: ibanez grx40 elektro gitar
+2025-01-24 17:05:17,613 - INFO - Processing 8/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-temiz-yamaha-pacifica-pac120h-1224781943/detay
+2025-01-24 17:05:21,340 - INFO - Saved: TEMİZ YAMAHA PACİFİCA PAC120H
+2025-01-24 17:05:23,786 - INFO - Processing 9/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-temiz-yamaha-pacifica-pac120h-1224781943/detay
+2025-01-24 17:05:27,111 - INFO - Saved: TEMİZ YAMAHA PACİFİCA PAC120H
+2025-01-24 17:05:30,209 - INFO - Processing 10/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-midex-strat-kasa-elektro-gitar-1224560741/detay
+2025-01-24 17:05:32,335 - INFO - Saved: midex strat kasa elektro gitar
+2025-01-24 17:05:35,017 - INFO - Processing 11/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-charvel-dst-st-1-star-kasa-elektro-gitar-1224781688/detay
+2025-01-24 17:05:38,062 - INFO - Saved: Charvel dst st-1 Star kasa elektro gitar
+2025-01-24 17:05:40,715 - INFO - Processing 12/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-ltd-ihtiyactan-kutulu-hh-yok-telli-calgilar-sb2f-846858451/detay
+2025-01-24 17:05:58,267 - ERROR - Error parsing listing https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-ltd-ihtiyactan-kutulu-hh-yok-telli-calgilar-sb2f-846858451/detay: Message: 
+Stacktrace:
+0   undetected_chromedriver             0x0000000104f2be08 undetected_chromedriver + 5025288
+1   undetected_chromedriver             0x0000000104f22c23 undetected_chromedriver + 4987939
+2   undetected_chromedriver             0x0000000104ac4e67 undetected_chromedriver + 409191
+3   undetected_chromedriver             0x0000000104b141b9 undetected_chromedriver + 733625
+4   undetected_chromedriver             0x0000000104b14371 undetected_chromedriver + 734065
+5   undetected_chromedriver             0x0000000104b5a194 undetected_chromedriver + 1020308
+6   undetected_chromedriver             0x0000000104b3b50d undetected_chromedriver + 894221
+7   undetected_chromedriver             0x0000000104b57571 undetected_chromedriver + 1009009
+8   undetected_chromedriver             0x0000000104b3b2b3 undetected_chromedriver + 893619
+9   undetected_chromedriver             0x0000000104b05eb9 undetected_chromedriver + 675513
+10  undetected_chromedriver             0x0000000104b070ee undetected_chromedriver + 680174
+11  undetected_chromedriver             0x0000000104eed819 undetected_chromedriver + 4769817
+12  undetected_chromedriver             0x0000000104ef2893 undetected_chromedriver + 4790419
+13  undetected_chromedriver             0x0000000104ef966e undetected_chromedriver + 4818542
+14  undetected_chromedriver             0x0000000104ef35bd undetected_chromedriver + 4793789
+15  undetected_chromedriver             0x0000000104ec598c undetected_chromedriver + 4606348
+16  undetected_chromedriver             0x0000000104f11b78 undetected_chromedriver + 4918136
+17  undetected_chromedriver             0x0000000104f11d30 undetected_chromedriver + 4918576
+18  undetected_chromedriver             0x0000000104f2285e undetected_chromedriver + 4986974
+19  libsystem_pthread.dylib             0x00007ff80c3671d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80c362bd3 thread_start + 15
+
+2025-01-24 17:06:02,155 - INFO - Processing 13/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-cort-elektro-gitar-1224384993/detay
+2025-01-24 17:06:20,227 - ERROR - Error parsing listing https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-cort-elektro-gitar-1224384993/detay: Message: 
+Stacktrace:
+0   undetected_chromedriver             0x0000000104f2be08 undetected_chromedriver + 5025288
+1   undetected_chromedriver             0x0000000104f22c23 undetected_chromedriver + 4987939
+2   undetected_chromedriver             0x0000000104ac4e67 undetected_chromedriver + 409191
+3   undetected_chromedriver             0x0000000104b141b9 undetected_chromedriver + 733625
+4   undetected_chromedriver             0x0000000104b14371 undetected_chromedriver + 734065
+5   undetected_chromedriver             0x0000000104b5a194 undetected_chromedriver + 1020308
+6   undetected_chromedriver             0x0000000104b3b50d undetected_chromedriver + 894221
+7   undetected_chromedriver             0x0000000104b57571 undetected_chromedriver + 1009009
+8   undetected_chromedriver             0x0000000104b3b2b3 undetected_chromedriver + 893619
+9   undetected_chromedriver             0x0000000104b05eb9 undetected_chromedriver + 675513
+10  undetected_chromedriver             0x0000000104b070ee undetected_chromedriver + 680174
+11  undetected_chromedriver             0x0000000104eed819 undetected_chromedriver + 4769817
+12  undetected_chromedriver             0x0000000104ef2893 undetected_chromedriver + 4790419
+13  undetected_chromedriver             0x0000000104ef966e undetected_chromedriver + 4818542
+14  undetected_chromedriver             0x0000000104ef35bd undetected_chromedriver + 4793789
+15  undetected_chromedriver             0x0000000104ec598c undetected_chromedriver + 4606348
+16  undetected_chromedriver             0x0000000104f11b78 undetected_chromedriver + 4918136
+17  undetected_chromedriver             0x0000000104f11d30 undetected_chromedriver + 4918576
+18  undetected_chromedriver             0x0000000104f2285e undetected_chromedriver + 4986974
+19  libsystem_pthread.dylib             0x00007ff80c3671d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80c362bd3 thread_start + 15
+
+2025-01-24 17:06:22,412 - INFO - Processing 14/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-squier-bullet-strat-hss-1224371555/detay
+2025-01-24 17:06:39,057 - ERROR - Error parsing listing https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-squier-bullet-strat-hss-1224371555/detay: Message: 
+Stacktrace:
+0   undetected_chromedriver             0x0000000104f2be08 undetected_chromedriver + 5025288
+1   undetected_chromedriver             0x0000000104f22c23 undetected_chromedriver + 4987939
+2   undetected_chromedriver             0x0000000104ac4e67 undetected_chromedriver + 409191
+3   undetected_chromedriver             0x0000000104b141b9 undetected_chromedriver + 733625
+4   undetected_chromedriver             0x0000000104b14371 undetected_chromedriver + 734065
+5   undetected_chromedriver             0x0000000104b5a194 undetected_chromedriver + 1020308
+6   undetected_chromedriver             0x0000000104b3b50d undetected_chromedriver + 894221
+7   undetected_chromedriver             0x0000000104b57571 undetected_chromedriver + 1009009
+8   undetected_chromedriver             0x0000000104b3b2b3 undetected_chromedriver + 893619
+9   undetected_chromedriver             0x0000000104b05eb9 undetected_chromedriver + 675513
+10  undetected_chromedriver             0x0000000104b070ee undetected_chromedriver + 680174
+11  undetected_chromedriver             0x0000000104eed819 undetected_chromedriver + 4769817
+12  undetected_chromedriver             0x0000000104ef2893 undetected_chromedriver + 4790419
+13  undetected_chromedriver             0x0000000104ef966e undetected_chromedriver + 4818542
+14  undetected_chromedriver             0x0000000104ef35bd undetected_chromedriver + 4793789
+15  undetected_chromedriver             0x0000000104ec598c undetected_chromedriver + 4606348
+16  undetected_chromedriver             0x0000000104f11b78 undetected_chromedriver + 4918136
+17  undetected_chromedriver             0x0000000104f11d30 undetected_chromedriver + 4918576
+18  undetected_chromedriver             0x0000000104f2285e undetected_chromedriver + 4986974
+19  libsystem_pthread.dylib             0x00007ff80c3671d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80c362bd3 thread_start + 15
+
+2025-01-24 17:06:42,137 - INFO - Processing 15/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-gibson-blueshawk-usa-little-lucille-1224589281/detay
+2025-01-24 17:07:01,706 - ERROR - Error parsing listing https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-gibson-blueshawk-usa-little-lucille-1224589281/detay: Message: 
+Stacktrace:
+0   undetected_chromedriver             0x0000000104f2be08 undetected_chromedriver + 5025288
+1   undetected_chromedriver             0x0000000104f22c23 undetected_chromedriver + 4987939
+2   undetected_chromedriver             0x0000000104ac4e67 undetected_chromedriver + 409191
+3   undetected_chromedriver             0x0000000104b141b9 undetected_chromedriver + 733625
+4   undetected_chromedriver             0x0000000104b14371 undetected_chromedriver + 734065
+5   undetected_chromedriver             0x0000000104b5a194 undetected_chromedriver + 1020308
+6   undetected_chromedriver             0x0000000104b3b50d undetected_chromedriver + 894221
+7   undetected_chromedriver             0x0000000104b57571 undetected_chromedriver + 1009009
+8   undetected_chromedriver             0x0000000104b3b2b3 undetected_chromedriver + 893619
+9   undetected_chromedriver             0x0000000104b05eb9 undetected_chromedriver + 675513
+10  undetected_chromedriver             0x0000000104b070ee undetected_chromedriver + 680174
+11  undetected_chromedriver             0x0000000104eed819 undetected_chromedriver + 4769817
+12  undetected_chromedriver             0x0000000104ef2893 undetected_chromedriver + 4790419
+13  undetected_chromedriver             0x0000000104ef966e undetected_chromedriver + 4818542
+14  undetected_chromedriver             0x0000000104ef35bd undetected_chromedriver + 4793789
+15  undetected_chromedriver             0x0000000104ec598c undetected_chromedriver + 4606348
+16  undetected_chromedriver             0x0000000104f11b78 undetected_chromedriver + 4918136
+17  undetected_chromedriver             0x0000000104f11d30 undetected_chromedriver + 4918576
+18  undetected_chromedriver             0x0000000104f2285e undetected_chromedriver + 4986974
+19  libsystem_pthread.dylib             0x00007ff80c3671d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80c362bd3 thread_start + 15
+
+2025-01-24 17:07:03,415 - INFO - Processing 16/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-cort-x-100-elektro-gitar-1224584337/detay
+2025-01-24 17:07:21,893 - ERROR - Error parsing listing https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-cort-x-100-elektro-gitar-1224584337/detay: Message: 
+Stacktrace:
+0   undetected_chromedriver             0x0000000104f2be08 undetected_chromedriver + 5025288
+1   undetected_chromedriver             0x0000000104f22c23 undetected_chromedriver + 4987939
+2   undetected_chromedriver             0x0000000104ac4e67 undetected_chromedriver + 409191
+3   undetected_chromedriver             0x0000000104b141b9 undetected_chromedriver + 733625
+4   undetected_chromedriver             0x0000000104b14371 undetected_chromedriver + 734065
+5   undetected_chromedriver             0x0000000104b5a194 undetected_chromedriver + 1020308
+6   undetected_chromedriver             0x0000000104b3b50d undetected_chromedriver + 894221
+7   undetected_chromedriver             0x0000000104b57571 undetected_chromedriver + 1009009
+8   undetected_chromedriver             0x0000000104b3b2b3 undetected_chromedriver + 893619
+9   undetected_chromedriver             0x0000000104b05eb9 undetected_chromedriver + 675513
+10  undetected_chromedriver             0x0000000104b070ee undetected_chromedriver + 680174
+11  undetected_chromedriver             0x0000000104eed819 undetected_chromedriver + 4769817
+12  undetected_chromedriver             0x0000000104ef2893 undetected_chromedriver + 4790419
+13  undetected_chromedriver             0x0000000104ef966e undetected_chromedriver + 4818542
+14  undetected_chromedriver             0x0000000104ef35bd undetected_chromedriver + 4793789
+15  undetected_chromedriver             0x0000000104ec598c undetected_chromedriver + 4606348
+16  undetected_chromedriver             0x0000000104f11b78 undetected_chromedriver + 4918136
+17  undetected_chromedriver             0x0000000104f11d30 undetected_chromedriver + 4918576
+18  undetected_chromedriver             0x0000000104f2285e undetected_chromedriver + 4986974
+19  libsystem_pthread.dylib             0x00007ff80c3671d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80c362bd3 thread_start + 15
+
+2025-01-24 17:07:24,372 - INFO - Processing 17/919: https://www.sahibinden.com/ilan/ikinci-el-ve-sifir-alisveris-muzik-muzik-aletleri-ibanez-ps40-paul-stanley-elektro-gitar-950559605/detay
+2025-01-24 17:07:53,353 - WARNING - Error reading existing file: Error tokenizing data. C error: Expected 18 fields in line 103, saw 19
+
+2025-01-24 17:07:53,353 - INFO - Remaining URLs to process: 1020
+2025-01-24 17:07:54,114 - INFO - patching driver executable /Users/atatandagidir/Library/Application Support/undetected_chromedriver/undetected_chromedriver
